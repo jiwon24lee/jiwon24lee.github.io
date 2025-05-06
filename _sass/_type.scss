@@ -33,6 +33,12 @@ p {
   margin-bottom: 1rem;
 }
 
+p_lowBtMargin {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -48,7 +54,8 @@ dd {
 
 hr {
   position: relative;
-  margin: var(--spacer-2) 0;
+  margin: 0.5rem 0;
+  // margin: var(--spacer-2) 0;
   border: 0;
   border-top: 1px solid var(--border-color);
 }
@@ -85,6 +92,9 @@ figure {
   margin: 0;
 }
 
+article {
+  margin-bottom: 1.75rem; // 원하는 값으로 조절 (예: 2rem, 1rem 등)
+}
 
 // Markdown footnotes
 //

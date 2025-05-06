@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On-going Research <span>&#8211;</span> Project Names Only
+title: On-going Research-Project Names Only
 ---
 
 -----

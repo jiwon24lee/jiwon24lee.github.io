@@ -6,18 +6,69 @@
   padding-top: var(--spacer);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
+  // aligning 
+  display: flex;           /* 제목과 네비게이션을 가로로 배치 */
+  align-items: center;     /* 세로로 중앙 정렬 */
+  justify-content: space-between; /* 제목과 네비게이션 간 공간을 최대로 분리 */
+  gap: 10px;               /* 제목과 네비게이션 사이의 간격 */
+  padding: 0px 0px;
+  margin-bottom: 0; 
+  width: 100%;
+  height: 60px;                 /* header의 높이를 설정 */
+  // sticky position
+  position: sticky;
+  top: 0;
+  z-index: 999;        // 다른 요소 위에 보이도록
+  background: white;   // 배경색을 주지 않으면 내용이 겹쳐 보일 수 있음
+  /* 아래쪽에만 그림자 */
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
 }
 
 .masthead-title {
+  margin-top: 0;
   margin-bottom: 0;
+  //
+  display: flex;
+  align-items: center;
+  gap: 5px;               /* 제목과 작은 텍스트 간 간격 */
 
   a {
     color: inherit;
+    // font-weight: bold;
     text-decoration: none;
   }
 
   small {
     font-weight: 400;
     opacity: .5;
+    margin-left: 0.01rem;
+    color: #888;
   }
+}
+
+.section-nav {
+  display: flex;           /* 네비게이션 링크를 가로로 배치 */
+  align-items: center;           /* 네비게이션을 세로로 중앙 정렬 */
+  justify-content: flex-start;    /* 좌측 정렬 */
+  gap: 8px;               /* 링크 간 간격 */
+  margin-top: 0;                       /* 상단 margin 없애기 */
+  padding: 1 1px;
+  height: 100%;                   /* 섹션 높이를 100%로 설정 */
+  line-height: 370px;               /* 링크 세로 높이 설정 */
+}
+
+.section-nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;       /* 하이퍼링크 크기 조정 */
+  line-height: 40px;                /* 링크 세로 높이 설정하여 가운데 정렬 */
+}
+
+.section-nav a:hover {
+  text-decoration: underline;
+}
+
+.section-nav span {
+  color: #555;                      /* middot 색상 */
+  font-size: 0.95rem;                    /* middot 크기 */
 }

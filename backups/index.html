@@ -19,7 +19,7 @@ layout: default
 <div class="cv">
   {% for item in site.cv %}
   <article class="cv-section">
-    <h2 class="item.title" id="{{ item.title | downcase | replace: ' ', '-' }}">
+    <h2 class="item.title">
       <!-- <a href="{{ post.url | relative_url }}"> -->
         {{ item.title }}
       <!-- </a> -->
@@ -28,4 +28,3 @@ layout: default
   </article>
   {% endfor %}
 </div>
-
