@@ -19,7 +19,8 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved. 
+          <span>Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</span>
         </small>
       </footer>
     </div>

@@ -1,6 +1,6 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
+title: Jiwon Lee
+# tagline: MyThe Jekyll Butler
 url: https://getpoole.com
 paginate: 1
 baseurl: ""
@@ -11,6 +11,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 
 # Optimize Jekyll
 exclude:
@@ -26,6 +27,15 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+# user-defined collections
+collections:
+  cv:
+    output: true
+    permalink: /cv/:name/
+
+# date format to record last updated date
+date_format: "%B %d, %Y"
+
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
@@ -33,9 +43,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Jiwon Lee
+  # url: https://twitter.com/mdo
+  email: jiwon24.lee@gmail.com
 
 # Custom vars
 version: 3.0.0
