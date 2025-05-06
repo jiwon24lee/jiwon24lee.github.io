@@ -1,0 +1,51 @@
+# Setup
+title: Jiwon Lee
+# tagline: MyThe Jekyll Butler
+url: https://getpoole.com
+paginate: 1
+baseurl: ""
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# user-defined collections
+collections:
+  cv:
+    output: true
+    permalink: /cv/:name/
+
+# date format to record last updated date
+date_format: "%B %d, %Y"
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Jiwon Lee
+  # url: https://twitter.com/mdo
+  email: jiwon24.lee@gmail.com
+
+# Custom vars
+version: 3.0.0

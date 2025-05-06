@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- <div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div> -->
+
+<div class="cv">
+  {% for item in site.cv %}
+  <article class="cv-section">
+    <h2 class="item.title">
+      <!-- <a href="{{ post.url | relative_url }}"> -->
+        {{ item.title }}
+      <!-- </a> -->
+    </h2>
+    {{ item.content }}
+  </article>
+  {% endfor %}
+</div>
