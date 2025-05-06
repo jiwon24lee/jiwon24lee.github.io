@@ -4,14 +4,15 @@ title: Patents
 ---
 
 -----
-**Controller, computing system including the same, and method of creating and searching page table entry for the same** 
+**Memory management unit and method of walking page table** 
 <span style="color: inherit; font-weight: bold;">[Link:</span>
 <a href="https://patents.google.com/patent/US20240202136A1/en" style="color: inherit; text-decoration: underline; font-weight: bold;">US</a><span style="color: inherit; font-weight: bold;">, </span>
 <a href="https://patents.google.com/patent/CN118210740A/en" style="color: inherit; text-decoration: underline; font-weight: bold;">CN</a><span style="color: inherit; font-weight: bold;">, </span>
 <a href="https://patents.google.com/patent/KR20240093023A/en" style="color: inherit; text-decoration: underline; font-weight: bold;">KR</a><span style="color: #000000; font-weight: bold;">]</span>
 <br>
-<span style="color: #888888;">Seongil O, Won Woo Ro, William Jinho Song, and </span><!--
---><span style="color: #000000; font-weight: bold; text-decoration: underline;">Jiwon Lee</span>
+<span style="color: #888888;">Won Woo Ro, </span><!--
+--><span style="color: #000000; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
+--><span style="color: #888888;">, Ipoom jeong, Hongju Kal, Gun Ko, and Hyunwuk Lee</span>
 <br>
 <span style="color: #000000;">US 18/502,058, CN 202311700848.0, KR 10-2022-0175909</span> <br>  
 

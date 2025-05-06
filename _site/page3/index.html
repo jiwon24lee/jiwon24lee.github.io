@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Jiwon Lee" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jiwon Lee"},"dateModified":"2025-05-06T11:27:02+09:00","headline":"Jiwon Lee","url":"http://localhost:4000/page3/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jiwon Lee"},"dateModified":"2025-05-06T18:19:54+09:00","headline":"Jiwon Lee","url":"http://localhost:4000/page3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -253,6 +253,112 @@
   <article class="cv-section">
     <h2 class="item.title">
       <!-- <a href=""> -->
+        About Me
+      <!-- </a> -->
+    </h2>
+    <hr />
+<div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+
+  <!-- Column 1: 사진, 위치, 메일, 링크들 -->
+  <div style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+
+    <!-- 사진 -->
+    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" />
+
+    <!-- 위치 -->
+    <p style="margin: 0;">📍Seoul, South Korea</p>
+
+    <!-- 메일 -->
+    <p style="margin: 0;"><strong>📧</strong> jiwon24.lee@gmail.com</p>
+    <p style="margin: 0 0 0 1.5em;">jiwon.lee@yonsei.ac.kr</p>
+
+    <!-- 링크 아이콘 효과 정의: hover & click feedbacks -->
+    <style>
+    .icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    }
+
+    .icon-link img {
+    width: 24px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .icon-link:hover img {
+    transform: scale(1.2);
+    }
+
+    .icon-link:active img {
+    transform: scale(0.95);
+    filter: brightness(85%);
+    }
+    </style>
+
+    <!-- 링크 아이콘들 - interaction + 가운데 정렬 -->
+    <div class="icon-container" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%;">
+        <a class="icon-link" href="/assets/cv_jiwon_lee.pdf" target="_blank">
+            <img src="/assets/icons-cv-v1.png" alt="CV" style="width: 24px; height: 24px;" />
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/jiwon-lee-bba4a627b/" target="_blank">
+            <img src="/assets/icons-linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;" />
+        </a>
+        <a class="icon-link" href="https://scholar.google.com/citations?user=MXL5epwAAAAJ&amp;hl=en" target="_blank">
+            <img src="/assets/icons-google-scholar-250.svg" alt="Google Scholar" style="width: 24px; height: 24px;" />
+        </a>
+        <a class="icon-link" href="https://orcid.org/0009-0009-6529-5333" target="_blank">
+            <img src="/assets/icons-orcid-256.svg" alt="ORCID" style="width: 24px; height: 24px;" />
+        </a>
+    </div>
+  </div>
+
+  <!-- Column 2: 자기 소개 -->
+  <div style="flex: 1;">
+    <p>
+      I completed my Ph.D. at Yonsei University under the supervision of Professor Won Woo Ro, with a dissertation titled
+      <em>'High-Performance Address Translation Mechanisms for Graphics Processing Units.'</em>
+      My research interests span a broad range of topics within computer architecture and systems, including (but not limited to)
+      designing efficient CPU and GPU microarchitectures, virtual memory frameworks, and scalable memory management methods.
+      I am open to postdoctoral opportunities, particularly those that offer the chance to broaden my research expertise beyond my previous focus.
+    </p>
+  </div>
+
+</div>
+
+  </article>
+  
+  <article class="cv-section">
+    <h2 class="item.title">
+      <!-- <a href=""> -->
+        Professional Experience
+      <!-- </a> -->
+    </h2>
+    <hr />
+<!-- Samsung Experience -->
+<div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+  <strong>Staff Engineer</strong>
+  <span style="text-align: right;">Aug. 2024 &ndash; Present</span>
+</div>
+<div>Samsung Electronics, Memory Division, South Korea</div>
+
+<div class="exp-separator" style="margin-top: 0.75rem;"></div>
+
+<!-- Yonsei University Experience -->
+<div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+  <strong>Graduate Research Assistant</strong>
+  <span style="text-align: right;">Mar. 2014 &ndash; Aug. 2018</span>
+</div>
+<div>Yonsei University, Seoul, South Korea</div>
+<div>Embedded Systems and Computer Architecture Lab (eSCaL)</div>
+<div>Advisor: Prof. Won Woo Ro</div>
+
+  </article>
+  
+  <article class="cv-section">
+    <h2 class="item.title">
+      <!-- <a href=""> -->
         Education
       <!-- </a> -->
     </h2>
@@ -447,14 +553,15 @@
       <!-- </a> -->
     </h2>
     <hr />
-<p><strong>Controller, computing system including the same, and method of creating and searching page table entry for the same</strong> 
+<p><strong>Memory management unit and method of walking page table</strong> 
 <span style="color: inherit; font-weight: bold;">[Link:</span>
 <a href="https://patents.google.com/patent/US20240202136A1/en" style="color: inherit; text-decoration: underline; font-weight: bold;">US</a><span style="color: inherit; font-weight: bold;">, </span>
 <a href="https://patents.google.com/patent/CN118210740A/en" style="color: inherit; text-decoration: underline; font-weight: bold;">CN</a><span style="color: inherit; font-weight: bold;">, </span>
 <a href="https://patents.google.com/patent/KR20240093023A/en" style="color: inherit; text-decoration: underline; font-weight: bold;">KR</a><span style="color: #000000; font-weight: bold;">]</span>
 <br />
-<span style="color: #888888;">Seongil O, Won Woo Ro, William Jinho Song, and </span><!--
---><span style="color: #000000; font-weight: bold; text-decoration: underline;">Jiwon Lee</span>
+<span style="color: #888888;">Won Woo Ro, </span><!--
+--><span style="color: #000000; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
+--><span style="color: #888888;">, Ipoom jeong, Hongju Kal, Gun Ko, and Hyunwuk Lee</span>
 <br />
 <span style="color: #000000;">US 18/502,058, CN 202311700848.0, KR 10-2022-0175909</span> <br /></p>
 
@@ -559,25 +666,25 @@ Development of Reconfigurable Artificial Neural Network Accelerator and Instruct
   <article class="cv-section">
     <h2 class="item.title">
       <!-- <a href=""> -->
-        Experience
+        Academic Activities
       <!-- </a> -->
     </h2>
     <hr />
-<h3 id="academic-service"><u>Academic Service</u></h3>
+<h3 id="academic-service">Academic Service</h3>
 <ul>
-  <li><strong>External Reviewer Committee</strong>, ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Summer Cycle, 2026</li>
-  <li><strong>Reviewer</strong>, ACM Transactions on Architecture and Code Optimization (TACO), 2025</li>
+  <li>External Reviewer Committee, ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Summer Cycle 2026</li>
+  <li>Reviewer, ACM Transactions on Architecture and Code Optimization (TACO), 2025</li>
 </ul>
 
-<h3 id="mentorship"><u>Mentorship</u></h3>
+<h3 id="mentorship">Mentorship</h3>
 <ul>
-  <li>Embedded Systems and Computer Architecture Lab, Yonsei University, Nov. 2024 <span>–</span>
- Present</li>
-  <li>Intelligence System and Parallel Computer Architecture Lab, Ewha Womans University, Jan. 2025 <span>–</span>
- Present</li>
+  <li>Embedded Systems and Computer Architecture Lab, Yonsei University<br />
+Industry–Academic Mentoring Program, Nov. 2024 <span>–</span> Present</li>
+  <li>Intelligence System and Parallel Computer Architecture Lab, Ewha Womans University<br />
+Industry–Academic Mentoring Program, Jan. 2025 <span>–</span> Present</li>
 </ul>
 
-<h3 id="teaching-assistant"><u>Teaching Assistant</u></h3>
+<h3 id="teaching-assistant">Teaching Assistant</h3>
 <ul>
   <li>EEE6611, System Design and Applications Lab, Yonsei University, Fall 2019</li>
   <li>EEE4473, Embedded System Lab, Yonsei University, Spring 2019</li>
@@ -607,7 +714,7 @@ Academic Excellence Award, Yonsei University, Spring 2014</p>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2025-05-06T11:31:21+09:00">2025</time>. All rights reserved. 
+          &copy; <time datetime="2025-05-06T18:25:20+09:00">2025</time>. All rights reserved. 
           <span>Last updated: May 06, 2025</span>
         </small>
       </footer>
