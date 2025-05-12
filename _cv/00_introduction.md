@@ -11,17 +11,23 @@ title: About Me
 
     <!-- 사진 -->
     <img src="/assets/profile_image.jpg" alt="Profile photo"
-        style="width: 100%; border-radius: 8px;"
+        style="width: 100%; border-radius: 8px; margin-bottom: 0;"
         loading="lazy" data-nosnippet class="no-preview">
 
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
-    <p style="margin: 0;">📍Seoul, South Korea</p>
+    <p style="margin: 0; font-size: 0.98em;">📍 Suwon, South Korea</p>
 
     <!-- 메일 -->
-    <p style="margin: 0;"><strong>📧</strong> jiwon24.lee@gmail.com</p>
-    <p style="margin: 0 0 0 1.5em;">jiwon.lee@yonsei.ac.kr</p>
+    <!-- <p style="margin: 0; font-size: 0.98em;"><strong>📧</strong> jiwon24 dot lee at gmail dot com</p> -->
+    <!-- <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon dot lee at yonsei dot ac dot kr</p> -->
+
+    <p style="margin: 0; font-size: 0.98em;"><strong>📧</strong> jiwon24.lee at gmail.com</p>
+    <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon.lee at yonsei.ac.kr</p>
+
+    <!-- <p style="margin: 0;"><strong>📧</strong> jiwon24.lee@gmail.com</p> -->
+    <!-- <p style="margin: 0 0 0 1.5em;">jiwon.lee@yonsei.ac.kr</p> -->
 
     <!-- 링크 아이콘 효과 정의: hover & click feedbacks -->
     <style>
@@ -54,7 +60,7 @@ title: About Me
     </style>
 
     <!-- 링크 아이콘들 - interaction + 가운데 정렬 -->
-    <div class="icon-container" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%;">
+    <div class="icon-container" style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.0rem; flex-wrap: wrap; width: 100%;">
         <a class="icon-link" href="/assets/cv_jiwon_lee.pdf" target="_blank">
             <img src="/assets/icons-cv-v1.png" alt="CV" style="width: 24px; height: 24px;">
         </a>
