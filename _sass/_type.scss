@@ -131,3 +131,46 @@ a[href^="#fnref:"] {
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+// Photo
+.text-image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: row; // 이미지를 가로로 배열
+  gap: 0.5rem;
+  // align-items: center;
+}
+
+.image-content img {
+  margin-top: 6.5px;
+  margin-bottom: 0px;
+  height: 230px; /* 통일된 높이 */
+  width: auto;   /* 비율 유지 */
+  object-fit: cover;
+  // max-width: 150px; // 필요에 따라 조정
+  // height: auto;
+}
+
+.image-content figcaption {
+  margin-top: 0.12rem;
+  font-size: 0.85rem;
+  color: #444;
+  text-align: center;
+}
+
+.text-image-wrapper {
+  display: flex;
+  flex-direction: row;  // 본문과 이미지를 가로로 배치
+  align-items: flex-start;  // 텍스트와 이미지를 위쪽으로 정렬
+  // gap: 1rem;  // 텍스트와 이미지 사이 간격
+}

@@ -10,7 +10,8 @@ title: About Me
   <div style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
 
     <!-- 사진 -->
-    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;">
+    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy">
+    <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
     <p style="margin: 0;">📍Seoul, South Korea</p>
@@ -66,9 +67,10 @@ title: About Me
     <p>
       I completed my Ph.D. at Yonsei University under the supervision of Professor Won Woo Ro, with a dissertation titled
       <em>'High-Performance Address Translation Mechanisms for Graphics Processing Units.'</em>
-      My research interests span a broad range of topics within computer architecture and systems, including (but not limited to)
-      designing efficient CPU and GPU microarchitectures, virtual memory frameworks, and scalable memory management methods.
-      I am open to postdoctoral opportunities, particularly those that offer the chance to broaden my research expertise beyond my previous focus.
+      My research interests span a broad range of topics within computer architecture and systems.
+      During my graduate studies, my primary research focus was on designing high-performance address translation methods for GPUs.
+      In addition, I co-authored several research papers on topics such as, enhancing hashed page table, designing efficient CPU microarchitectures, improving memory management methods for unified virtual memory in GPUs, multi-GPU systems, and memory expansion modules.
+      Currently, I am open to postdoctoral opportunities, particularly those that offer the chance to broaden my research expertise beyond my previous focus.
     </p>
   </div>
 

@@ -20,4 +20,4 @@ title: Professional Experience
 </div>
 <div>Yonsei University, Seoul, South Korea</div>
 <div>Embedded Systems and Computer Architecture Lab (eSCaL)</div>
-<div>Advisor: Prof. Won Woo Ro</div>
+<div>Advisor: Professor Won Woo Ro</div>
