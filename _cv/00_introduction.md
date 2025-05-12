@@ -10,7 +10,10 @@ title: About Me
   <div style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
 
     <!-- 사진 -->
-    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy" style="display: none;">
+    <img src="/assets/profile_image.jpg" alt="Profile photo"
+        style="width: 100%; border-radius: 8px; display: none;"
+        loading="lazy" data-nosnippet>
+
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
