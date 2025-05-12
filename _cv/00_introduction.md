@@ -11,8 +11,8 @@ title: About Me
 
     <!-- 사진 -->
     <img src="/assets/profile_image.jpg" alt="Profile photo"
-        style="width: 100%; border-radius: 8px; display: none;"
-        loading="lazy" data-nosnippet>
+        style="width: 100%; border-radius: 8px;"
+        loading="lazy" data-nosnippet class="no-preview">
 
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
@@ -46,6 +46,11 @@ title: About Me
     transform: scale(0.95);
     filter: brightness(85%);
     }
+
+    .no-preview {
+      pointer-events: none;
+    }
+
     </style>
 
     <!-- 링크 아이콘들 - interaction + 가운데 정렬 -->

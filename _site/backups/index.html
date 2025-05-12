@@ -40,6 +40,10 @@
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jiwon Lee"},"dateModified":"2025-05-06T23:48:41+09:00","headline":"Jiwon Lee","url":"http://localhost:4000/backups/"}</script>
 <!-- End Jekyll SEO tag -->
 
+
+  <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="robots" content="noimageindex">
 </head>
 
 
@@ -85,7 +89,8 @@
   <div style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">
 
     <!-- 사진 -->
-    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy" />
+    <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy" data-nosnippet="" class="no-preview" />
+
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
@@ -118,6 +123,11 @@
     transform: scale(0.95);
     filter: brightness(85%);
     }
+
+    .no-preview {
+      pointer-events: none;
+    }
+
     </style>
 
     <!-- 링크 아이콘들 - interaction + 가운데 정렬 -->
@@ -573,7 +583,7 @@ Academic Excellence Award, Yonsei University, Spring 2014</p>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2025-05-12T22:27:18+09:00">2025</time>. All rights reserved. 
+          &copy; <time datetime="2025-05-12T23:14:00+09:00">2025</time>. All rights reserved. 
           <!-- <span>Last updated: May 06, 2025</span> -->
           <span>Last updated: May 12, 2025</span>
         </small>
