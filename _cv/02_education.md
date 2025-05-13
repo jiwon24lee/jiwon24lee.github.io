@@ -9,7 +9,6 @@ title: Education
   <span style="text-align: right;">Mar. 2018 &ndash; Aug. 2024</span>
 </div>
 <div>Yonsei University, Seoul, South Korea</div>
-<div>Advisor: Professor Won Woo Ro</div>
 <div><em>Dissertation: "High-Performance Address Translation Mechanisms for Graphics Processing Units."</em></div>
 
 <!-- 중간 여백용 div -->
