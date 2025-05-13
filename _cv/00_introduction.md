@@ -4,7 +4,8 @@ title: About Me
 ---
 
 -----
-<div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+<!-- <div class="about-me-wrapper" style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;"> -->
+<div class="about-me-wrapper">
 
   <!-- Column 1: 사진, 위치, 메일, 링크들 -->
   <div style="flex: 0 0 200px; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;">

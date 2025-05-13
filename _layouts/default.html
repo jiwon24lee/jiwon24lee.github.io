@@ -8,23 +8,27 @@
     <div class="container content">
       <header class="masthead">
         <h2 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h2>
+      
+        <!-- 모바일용 토글 버튼 -->
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      
+        <!-- 한 개의 네비 요소만 사용 -->
         <nav class="section-nav">
-          <a href="#about-me">Home </a> &middot;
-          <!-- <a href="#professional-experience">Professional Experience</a> -->
-          <!-- <a href="#education">Education</a> -->
-          <a href="#publications">Publications</a> &middot;
-          <a href="#patents">Patents </a> &middot;
-          <a href="#on-going-research-project-names-only">On-going Research </a> &middot;
-          <a href="#projects">Projects </a> &middot;
-          <a href="#academic-activities">Academic Activities </a> &middot;
-          <a href="#after-hours">After Hours </a>
-          <!-- <a href="#scholarships-and-awards">Scholarships and Awards</a> -->
+          <ul>
+            <li><a href="#about-me">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#patents">Patents</a></li>
+            <li><a href="#on-going-research-project-names-only">On-going Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#academic-activities">Academic Activities</a></li>
+            <li><a href="#after-hours">After Hours</a></li>
+          </ul>
         </nav>
       </header>
-
+      
       <main>
         {{ content }}
       </main>
@@ -48,5 +52,7 @@
        ga('send', 'pageview');
      </script>
     {% endif %}
+    <!-- Javascript codes -->
+    <script src="{{ '/assets/js/nav-toggle.js' | relative_url }}"></script>
   </body>
 </html>

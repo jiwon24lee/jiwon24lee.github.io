@@ -19,11 +19,11 @@ title: After Hours
   <div class="image-content">
     <figure>
       <img src="assets/me_at_stage.png" alt="Photo of me playing an electric guitar on a stage">
-      <figcaption>Me playing on stage<br>in September 2018</figcaption>
+      <figcaption>Me playing on stage<br> in September 2018</figcaption>
     </figure>
     <figure>
       <img src="assets/guitar&amp_full.jpg" alt="Photo of my 12-year old electric guitar and amp">
-      <figcaption>My 12-year-old<br>guitar and amp</figcaption>
+      <figcaption>My 12-year-old<br> guitar and amp</figcaption>
     </figure>
   </div>
 </div>
