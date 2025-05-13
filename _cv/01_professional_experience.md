@@ -7,7 +7,7 @@ title: Professional Experience
 <!-- Samsung Experience -->
 <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
   <strong>Staff Engineer</strong>
-  <span style="text-align: right;">Aug. 2024 &ndash; Present</span>
+  <span style="text-align: right;">Sept. 2024 &ndash; Present</span>
 </div>
 <div>Samsung Electronics, Memory Division, South Korea</div>
 
