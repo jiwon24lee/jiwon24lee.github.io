@@ -21,6 +21,9 @@
 
 .section-nav {
   display: flex;          /* 기본엔 항상 보임 */
+  flex-direction: row;    /* 기본 상태에서 가로 정렬 */
+  justify-content: center;
+  align-items: center;
 }
 
 .section-nav ul {
@@ -52,6 +55,16 @@
   line-height: 1.2;
 }
 
+/* 푸터 내용 중앙 정렬 */
+.footer {
+  text-align: center;    
+  padding: 1rem 0;
+}
+
+.footer small {
+  display: block;
+  margin: 0.5rem 0;
+}
 
 // ──────────────────────────────────────────────────────────────
 // 데스크탑 스타일 (911px 이상)
@@ -94,29 +107,96 @@
 // ──────────────────────────────────────────────────────────────
 @media (max-width: 540px) {
   .masthead {
-    /* flex 레이아웃 유지, justify-content로 버튼 위치 조정 */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     padding: 1rem 0;
-  }
-
-  /* 네비 숨기고 토글 버튼만 보이기 */
-  .section-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
     background: white;
-    padding: 0.5rem 1rem;
-    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  /* 모바일 환경에서 제목 중앙 정렬 */
+  .masthead-title {
+    position: relative;   /* 불필요한 top 제거 */
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.5;     /* 버튼과 동일한 높이 */
+    margin: 0;
+  }
+
+  .masthead-title h2, .masthead-title small {
+    display: block;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* 메뉴 버튼 스타일 (기존 유지) */
   .nav-toggle {
     display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    // margin-left: auto;
   }
 
-  /* nav-open 클래스 붙으면 메뉴 표시 */
-  .masthead.nav-open .section-nav {
-    display: flex;
+  /* 모바일 환경에서 기본 상태 메뉴 숨김 */
+  .section-nav {
+    position: absolute;
+    top: 60px;
+    // left: 0;
+    right: 0;
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    z-index: 1000;
+    text-align: right;
+  }
+
+  /* 메뉴 활성화 상태 */
+  .section-nav.show {
+    max-height: 50vh; /* 메뉴의 최대 높이, 필요 시 조정 */
+  }
+
+  /* 메뉴 항목 스타일 */
+  .section-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // .section-nav ul {
+  //   flex-direction: column;
+  //   gap: 0.5rem;
+  // }
+
+  .section-nav li {
+    margin: 0.3rem 0;
+  }
+
+  .section-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    // padding: 0.5rem 1rem;
+    margin: 0 0;
+  }
+
+  /* 📌 추가: 각 섹션 제목 중앙 정렬 */
+  .page-title, .post-title, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
   }
 }

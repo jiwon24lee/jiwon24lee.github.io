@@ -25,6 +25,7 @@ title: About Me
     <!-- <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon dot lee at yonsei dot ac dot kr</p> -->
 
     <p style="margin: 0; font-size: 0.98em;"><strong>📧</strong> jiwon24.lee at gmail.com</p>
+    <!-- TODO: 모바일에서는 margin을 조금 더 밀어야함 -->
     <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon.lee at yonsei.ac.kr</p>
 
     <!-- <p style="margin: 0;"><strong>📧</strong> jiwon24.lee@gmail.com</p> -->
