@@ -111,6 +111,7 @@
     top: 0;
     left: 0;
     right: 0;
+    margin-bottom: 0.5rem;
     z-index: 1000;
     padding: 1rem 0;
     background: white;
@@ -151,7 +152,7 @@
   /* 모바일 환경에서 기본 상태 메뉴 숨김 */
   .section-nav {
     position: absolute;
-    top: 60px;
+    top: 80%;
     // left: 0;
     right: 0;
     background: white;
@@ -168,6 +169,7 @@
   /* 메뉴 활성화 상태 */
   .section-nav.show {
     max-height: 50vh; /* 메뉴의 최대 높이, 필요 시 조정 */
+    padding-bottom: 0.0rem;           /* 여백 추가 */
   }
 
   /* 메뉴 항목 스타일 */

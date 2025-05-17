@@ -21,43 +21,44 @@ title: About Me
     <p style="margin: 0; font-size: 0.98em;">📍 Suwon, South Korea</p>
 
     <!-- 메일 -->
-    <!-- <p style="margin: 0; font-size: 0.98em;"><strong>📧</strong> jiwon24 dot lee at gmail dot com</p> -->
-    <!-- <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon dot lee at yonsei dot ac dot kr</p> -->
-
-    <p style="margin: 0; font-size: 0.98em;"><strong>📧</strong> jiwon24.lee at gmail.com</p>
-    <!-- TODO: 모바일에서는 margin을 조금 더 밀어야함 -->
-    <p style="margin: 0 0 0 1.5em; font-size: 0.98em;">jiwon.lee at yonsei.ac.kr</p>
-
-    <!-- <p style="margin: 0;"><strong>📧</strong> jiwon24.lee@gmail.com</p> -->
-    <!-- <p style="margin: 0 0 0 1.5em;">jiwon.lee@yonsei.ac.kr</p> -->
+    <div class="email-wrapper">
+      <div class="email-item">
+        <span class="email-icon">📧</span>
+        <span class="email-text">jiwon24.lee at gmail.com</span>
+      </div>
+      <div class="email-item">
+        <span class="email-icon hidden-icon">📧</span>
+        <span class="email-text">jiwon.lee at yonsei.ac.kr</span>
+      </div>
+    </div>
 
     <!-- 링크 아이콘 효과 정의: hover & click feedbacks -->
     <style>
-    .icon-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 8px;
-    }
-
-    .icon-link img {
-    width: 24px;
-    transition: transform 0.2s ease, filter 0.2s ease;
-    }
-
-    .icon-link:hover img {
-    transform: scale(1.2);
-    }
-
-    .icon-link:active img {
-    transform: scale(0.95);
-    filter: brightness(85%);
-    }
-
-    .no-preview {
-      pointer-events: none;
-    }
+      .icon-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+      }
+  
+      .icon-link img {
+      width: 24px;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      }
+  
+      .icon-link:hover img {
+      transform: scale(1.2);
+      }
+  
+      .icon-link:active img {
+      transform: scale(0.95);
+      filter: brightness(85%);
+      }
+  
+      .no-preview {
+        pointer-events: none;
+      }
 
     </style>
 

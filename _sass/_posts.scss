@@ -65,3 +65,61 @@
     }
   }
 }
+
+
+// post-specific configs
+// for 00_introduction.md
+/* 공통 스타일 */
+/* 공통 스타일 */
+/* 공통 스타일 */
+.email-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.email-icon {
+  min-width: 1.5em;  /* 아이콘 공간 확보 */
+  text-align: center;
+}
+
+.email-text {
+  font-size: 0.98em;
+  margin: 0;
+}
+
+/* 📌 수정: 두 번째 메일 아이콘 숨기기 */
+.hidden-icon {
+  visibility: hidden;  /* 아이콘을 숨기되 공간은 유지 */
+}
+
+/* 📌 모바일 환경 (540px 이하) */
+@media (max-width: 540px) {
+  .email-wrapper {
+    gap: 0.1rem;
+  }
+
+  .email-item {
+    gap: 0.2rem;
+  }
+
+  .email-icon {
+    visibility: visible;
+    min-width: 1.5em;
+  }
+
+  .email-text {
+    font-size: 0.95em;
+  }
+
+  /* 📌 모바일 환경에서도 숨긴 아이콘의 공간 유지 */
+  .hidden-icon {
+    visibility: hidden;
+  }
+}
