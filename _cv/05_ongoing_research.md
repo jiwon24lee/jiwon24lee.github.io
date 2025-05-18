@@ -1,6 +1,7 @@
 ---
 layout: post
-title: On-going Research-Project Names Only
+title: List of Ongoing Research
+# title: On-going Research (Project Names Only)
 ---
 
 -----

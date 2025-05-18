@@ -99,8 +99,8 @@
   visibility: hidden;  /* 아이콘을 숨기되 공간은 유지 */
 }
 
-/* 📌 모바일 환경 (540px 이하) */
-@media (max-width: 540px) {
+/* 📌 모바일 환경 (600px 이하) */
+@media (max-width: 600px) {
   .email-wrapper {
     gap: 0.1rem;
   }

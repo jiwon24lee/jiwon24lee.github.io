@@ -17,7 +17,6 @@ footer {
 }
 
 
-// layouts for mobile environments
 /* ────────── 기본 ────────── */
 .about-me-wrapper,
 .text-image-wrapper {
@@ -29,11 +28,128 @@ footer {
 
 .about-me-wrapper > *,
 .text-image-wrapper > * {
-  flex: 1 1 0;
+  flex: 0 0 auto;
 }
 
-/* ────────── 모바일 (≤540px) ────────── */
-@media (max-width: 540px) {
+// Photo
+.text-image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-direction: row;  // 본문과 이미지를 가로로 배치
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: row; // 이미지를 가로로 배열
+  gap: 0.5rem;
+  justify-content: center; /* ★ 추가: 이미지 정렬 개선 */
+  align-items: center;      /* ★ 추가: 이미지 정렬 개선 */
+  flex-basis: 300px; /* ★ 수정: 이미지 컨테이너 넓이 제한 */
+  // align-items: center;
+}
+
+.image-content img {
+  margin-top: 6.5px;
+  margin-bottom: 0px;
+  height: 230px; /* 통일된 높이 */
+  width: 100%;   /* 비율 유지 */
+  object-fit: cover;
+  // max-width: 150px; // 필요에 따라 조정
+  // height: auto;
+}
+
+.image-content figcaption {
+  margin-top: 0.12rem;
+  font-size: 0.85rem;
+  color: #444;
+  text-align: center;
+}
+
+/* ────────── 반응형 (600-900px) ────────── */
+@media (min-width: 600px) and (max-width: 900px) {
+  .text-image-wrapper {
+    flex-direction: column; /* ★ 수정: 세로 배치로 전환 */
+    align-items: center;    /* ★ 수정: 가운데 정렬 */
+  }
+
+  .text-content {
+    max-width: 100%; /* ★ 수정: 텍스트 너비를 100%로 설정 */
+    // margin-bottom: 1rem; /* ★ 수정: 이미지와 간격 확보 */
+  }
+
+  .image-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center; /* ★ 수정: 이미지 간격 조정 */
+    align-items: center;      /* ★ 추가: 이미지 정렬 개선 */
+    width: 95%; /* ★ 수정: 이미지 컨테이너 폭을 100%로 설정 */
+  }
+
+  .image-content img {
+    height: 400px;
+    width: 100%; /* ★ 수정: 이미지 폭 줄여서 세로 배치에 적합하게 */
+    // max-width: 100%; /* ★ 수정: 비율 유지 */
+    object-fit: contain;
+  }
+
+  /* 캡션 스타일 */
+  .text-image-wrapper .image-content figure figcaption {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: inherit;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 0.85rem;
+  }
+
+  /* 원래 <br>은 숨기고 */
+  .text-image-wrapper .image-content figure figcaption br {
+    display: none;
+  }
+  /* br 위치에 공백 삽입 (before) */
+  .text-image-wrapper .image-content figure figcaption br::before {
+    content: "\00A0";
+  }
+
+  /* 캡션이 너무 길 때 자동 줄바꿈 */
+  .text-image-wrapper .image-content figure figcaption.long {
+    white-space: normal; /* ★ 수정: 너무 긴 경우 줄바꿈 허용 */
+    word-break: break-word; /* ★ 수정: 단어 중간에 줄바꿈 */
+  }
+
+  // /* 캡션을 한 줄로, br 대신 공백, 말줄임표 적용 */
+  // .text-image-wrapper .image-content figure figcaption {
+  //   // display: inline-block;   /* inline-block 으로 텍스트 흐름 제어 */
+  //   text-align: center;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   text-overflow: ellipsis;
+  //   font-size: inherit;
+  //   margin-bottom: 1.5rem;
+  //   color: #555;
+  // }
+  // /* 원래 <br>은 숨기고 */
+  // .text-image-wrapper .image-content figure figcaption br {
+  //   display: none;
+  // }
+  // /* br 위치에 공백 삽입 (before) */
+  // .text-image-wrapper .image-content figure figcaption br::before {
+  //   content: "\00A0";
+  // }
+}
+
+/* ────────── 모바일 (≤600px) ────────── */
+@media (max-width: 600px) {
   /* 부모를 block 컨테이너로 변경 */
   .about-me-wrapper,
   .text-image-wrapper {
