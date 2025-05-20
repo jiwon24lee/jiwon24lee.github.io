@@ -28,7 +28,7 @@ title: Publications
 <span style="color: var(--gray-500);">Yongju Lee, Jaewon Kwon, Cheolhwan Kim, Enhyuk Jang, </span><!--
 --><span style="color: var(--heading-color); font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
 --><span style="color: var(--gray-500);">, Hyunwuk Lee, and Won Woo Ro</span> <br>
-<span style="color: var(--heading-color);">(To appear) IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2025.</span> <br>
+<span style="color: var(--heading-color);">IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2025.</span> <br>
 
 
 **HashScape: Leveraging Virtual Address Dynamics for Efficient Hashed Page Tables**
