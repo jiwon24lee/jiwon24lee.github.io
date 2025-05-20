@@ -17,6 +17,7 @@ $slide-speed: 0.5s;
   display: flex;          /* 항목을 가로로 배치 */
   align-items: center;    /* 수직 중앙 정렬 */
   padding: 1rem 0;        /* 상하 1rem, 좌우 0 */
+  background-color: var(--body-bg);
 }
 
 .masthead-title a {
@@ -29,6 +30,12 @@ $slide-speed: 0.5s;
   flex-direction: row;    /* 기본 상태에서 가로 정렬 */
   justify-content: center;
   align-items: center;
+  background-color: var(--body-bg);
+  color: var(--heading-color);
+}
+
+.section-nav.show {
+  color: var(--heading-color);
 }
 
 .section-nav ul {
@@ -40,24 +47,26 @@ $slide-speed: 0.5s;
   list-style: none;
   padding: 0;
   margin: 0;
+  color: var(--heading-color);
 }
 
 .section-nav li {
   white-space: nowrap;
   margin: 0;              /* 개별 li 여백 초기화 */
+  color: var(--heading-color);
 }
 
 .section-nav li + li::before {
   content: "·";
   margin: 0 0.5rem;       /* 균일한 좌우 공백 */
-  color: #555;
+  color: var(--heading-color);
 }
 
 .section-nav a {
   text-decoration: none;
-  color: #555;
   font-size: 1.0rem;
   line-height: 1.2;
+  color: var(--heading-color);
 }
 
 /* 푸터 내용 중앙 정렬 */
@@ -80,7 +89,7 @@ $slide-speed: 0.5s;
     grid-template-columns: max-content 1fr;
     column-gap: 1rem;
     align-items: center;
-    background: white;
+    // background: white;
     position: sticky;
     top: 0; left: 0; right: 0;
     z-index: 1000;
@@ -116,7 +125,7 @@ $slide-speed: 0.5s;
     grid-template-columns: max-content 1fr;
     column-gap: 1rem;
     align-items: center;
-    background: white;
+    // background: white;
     position: sticky;
     top: 0; left: 0; right: 0;
     z-index: 1000;
@@ -160,7 +169,6 @@ $slide-speed: 0.5s;
   .section-nav li + li::before {
     content: "·";
     margin: 0 0.5rem;       /* 균일한 좌우 공백 */
-    color: #555;
   }
   
   /* 📌 줄바꿈 기준 설정: On-going Research부터 두 번째 줄 */
@@ -171,19 +179,15 @@ $slide-speed: 0.5s;
 
   .section-nav a {
     text-decoration: none;
-    color: #555;
     font-size: 1.0rem;
     line-height: 1.2;
   }
 }
 
-
 // ──────────────────────────────────────────────────────────────
 // 모바일 스타일 (600px 이하)
 // ──────────────────────────────────────────────────────────────
 @media (max-width: 600px) {
-  
-  
   .masthead {
     position: sticky;
     top: 0;
@@ -192,7 +196,7 @@ $slide-speed: 0.5s;
     margin-bottom: 0.5rem;
     z-index: 1000;
     padding: 1rem 0;
-    background: white;
+    // background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,7 +242,8 @@ $slide-speed: 0.5s;
     top: 80%;
     left: 0;
     right: 0;
-    background: white;
+    // background: white;
+    // background: var(--body-bg);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -285,7 +290,8 @@ $slide-speed: 0.5s;
 
   .section-nav a {
     text-decoration: none;
-    color: #333;
+    // color: #333;
+    color: var(--body-800);
     font-size: 1rem;
     line-height: 1.3;
     // padding: 0.5rem 1rem;

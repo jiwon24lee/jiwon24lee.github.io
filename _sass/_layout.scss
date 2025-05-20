@@ -68,7 +68,8 @@ footer {
 .image-content figcaption {
   margin-top: 0.12rem;
   font-size: 0.85rem;
-  color: #444;
+  // color: #444;
+  color: var(--heading-color);   /* 원래 #444 */
   text-align: center;
 }
 
@@ -108,7 +109,8 @@ footer {
     text-overflow: ellipsis;
     font-size: inherit;
     margin-bottom: 1.5rem;
-    color: #555;
+    // color: #555;
+    color: var(--heading-color);   /* 원래 #444 */
     font-size: 0.85rem;
   }
 
@@ -222,7 +224,8 @@ footer {
     text-overflow: ellipsis;
     font-size: inherit;
     margin-bottom: 1.5rem;
-    color: #555;
+    // color: #555;
+    color: var(--heading-color);   /* 원래 #444 */
   }
   /* 원래 <br>은 숨기고 */
   .text-image-wrapper .image-content figure figcaption br {
