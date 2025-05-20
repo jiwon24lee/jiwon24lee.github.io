@@ -12,9 +12,9 @@ title: Publications
     [Link]
 </a> -->
 <br>
-<span style="color: --gray-600;">Yuan Feng, Yuke Li, </span><!--
+<span style="color: --gray-800;">Yuan Feng, Yuke Li, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Won Woo Ro, and Hyeran Jeon</span> <br>
+--><span style="color: --gray-800;">, Won Woo Ro, and Hyeran Jeon</span> <br>
 <span style="color: --heading-color;">(To appear) IEEE/ACM International Symposium on Computer Architecture (ISCA), 2025.  </span> <br>  
 
 **COSMOS: An LLC Contention Slowdown Model for Heterogeneous Multi-core Systems**
@@ -25,9 +25,9 @@ title: Publications
     [Link]
 </a> -->
 <br>
-<span style="color: --gray-600;">Yongju Lee, Jaewon Kwon, Cheolhwan Kim, Enhyuk Jang, </span><!--
+<span style="color: --gray-800;">Yongju Lee, Jaewon Kwon, Cheolhwan Kim, Enhyuk Jang, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Hyunwuk Lee, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Hyunwuk Lee, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">(To appear) IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2025.</span> <br>
 
 
@@ -39,9 +39,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Won Hur, </span><!--
+<span style="color: --gray-800;">Won Hur, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Jaewon Kwon, Minjae Kim, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Jaewon Kwon, Minjae Kim, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE Transactions on Computers (TC), 2025.</span> <br>
 
 **Marching Page Walks: Batching and Concurrent Page Table Walks for Enhancing GPU Throughput**
@@ -53,7 +53,7 @@ title: Publications
 </a>
 <br>
 <span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee*</span><!--
---><span style="color: --gray-600;">, Gun Ko, Myung Kuk Yoon, Ipoom Jeong, Yunho Oh, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Gun Ko, Myung Kuk Yoon, Ipoom Jeong, Yunho Oh, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE International Symposium on High-Performance Computer Architecture (HPCA), 2025. </span> <br> 
 
 **REC: Enhancing Fine-Grained Cache Coherence Protocol in Multi-GPU Systems**
@@ -64,9 +64,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Gun Ko, </span><!--
+<span style="color: --gray-800;">Gun Ko, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Hongju Kal, Hyunwuk Lee, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Hongju Kal, Hyunwuk Lee, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">Journal of Systems Architecture (JSA), Vol. 160, 103339, Mar. 2025.</span> <br> 
 
 **Geneva: A Dynamic Confluence of Speculative Execution and In-Order Commitment Windows**
@@ -77,9 +77,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Yanghee Lee, </span><!--
+<span style="color: --gray-800;">Yanghee Lee, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Jaewon Kwon, Yongju Lee, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Jaewon Kwon, Yongju Lee, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE/ACM Design Automation Conference (DAC), 2024.</span> <br> 
 
 **SnakeByte: A TLB Design with Adaptive and Recursive Page Merging in GPUs**
@@ -91,7 +91,7 @@ title: Publications
 </a>
 <br>
 <span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee*</span><!--
---><span style="color: --gray-600;">, Ju Min Lee, Yunho Oh, William J. Song, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Ju Min Lee, Yunho Oh, William J. Song, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE International Symposium on High-Performance Computer Architecture (HPCA), 2023.</span> <br> 
 
 **Early-Adaptor: An Adaptive Framework for Proactive UVM Memory Management**
@@ -102,9 +102,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Seokjin Go, Hyunwuk Lee, Junsung Kim, </span><!--
+<span style="color: --gray-800;">Seokjin Go, Hyunwuk Lee, Junsung Kim, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Myung Kuk Yoon, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Myung Kuk Yoon, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2023.</span> <br> 
 
 **Analysis on Memory Access Patterns of Server-Class Workloads in Page- and Cache Line- Granularity**
@@ -115,9 +115,9 @@ title: Publications
     [Link]
 </a> -->
 <br>
-<span style="color: --gray-600;">Kyeonghoon Lim, Minjae Kim, </span><!--
+<span style="color: --gray-800;">Kyeonghoon Lim, Minjae Kim, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">International Conference on Electronics, Information, and Communication (ICEIC), 2023.</span> <br> 
 
 **Performance Analysis of Criticality-Aware Out-of-Order Cores for Exploiting MLP**
@@ -128,9 +128,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Yanghee Lee, </span><!--
+<span style="color: --gray-800;">Yanghee Lee, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2023.</span> <br> 
 
 **Adaptive Data Prefetcher with Probability Learning in LLC**
@@ -141,9 +141,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Jusin Kim, </span><!--
+<span style="color: --gray-800;">Jusin Kim, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2023.</span> <br> 
 
 **Reconstructing Out-of-Order Issue Queue**
@@ -154,9 +154,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Ipoom Jeong, </span><!--
+<span style="color: --gray-800;">Ipoom Jeong, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Myung Kuk Yoon, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Myung Kuk Yoon, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE/ACM International Symposium on Microarchitecture (MICRO), 2022.</span> <br> 
 
 **Analysis of DRAM-based Network of DRAM Swap Space Adopting Latency Hiding Technique**
@@ -167,9 +167,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Hyoseong Choi, </span><!--
+<span style="color: --gray-800;">Hyoseong Choi, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Jeonghoon Choi, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Jeonghoon Choi, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2022.</span> <br> 
 
 **PIMCaffe: Functional Evaluation of a Machine Learning Framework for In-Memory Neural Processing Unit**
@@ -180,9 +180,9 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Won Jeon, </span><!--
+<span style="color: --gray-800;">Won Jeon, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Dongseok Kang, Hongju Kal, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Dongseok Kang, Hongju Kal, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">IEEE Access, Vol. 9, pp. 96629-96640, Jul. 2021.</span> <br> 
 
 **Chapter Six - Deep learning with GPUs**
@@ -193,8 +193,8 @@ title: Publications
     [Link]
 </a>
 <br>
-<span style="color: --gray-600;">Won Jeon, Gun Ko, </span><!--
+<span style="color: --gray-800;">Won Jeon, Gun Ko, </span><!--
 --><span style="color: --heading-color; font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
---><span style="color: --gray-600;">, Hyunwuk Lee, Dongho Ha, and Won Woo Ro</span> <br>
+--><span style="color: --gray-800;">, Hyunwuk Lee, Dongho Ha, and Won Woo Ro</span> <br>
 <span style="color: --heading-color;">Advances in Computers, Vol. 122, pp. 167-215, 2021.</span> <br> 
 
