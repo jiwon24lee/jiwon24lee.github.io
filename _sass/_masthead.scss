@@ -236,7 +236,7 @@ $slide-speed: 0.5s;
   .section-nav {
     position: absolute;
     top: 80%;
-    // left: 0;
+    left: 0;
     right: 0;
     background: white;
     max-height: 0;
@@ -255,6 +255,16 @@ $slide-speed: 0.5s;
     max-height: 50vh; /* 메뉴의 최대 높이, 필요 시 조정 */
     padding-bottom: 0.5rem;           /* 여백 추가 */
     transition: max-height #{$slide-speed} ease;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 0;
+    padding: 0 0;
+    text-align: center;
   }
 
   /* 메뉴 항목 스타일 */
@@ -276,7 +286,7 @@ $slide-speed: 0.5s;
   .section-nav a {
     text-decoration: none;
     color: #333;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.3;
     // padding: 0.5rem 1rem;
     margin: 0 0;
@@ -285,5 +295,34 @@ $slide-speed: 0.5s;
   /* 📌 추가: 각 섹션 제목 중앙 정렬 */
   .page-title, .post-title, h1, h2, h3, h4, h5, h6 {
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .section-nav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-nav a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .section-nav a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .section-nav a {
+    font-size: 0.75rem;
   }
 }
