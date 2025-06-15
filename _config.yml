@@ -12,6 +12,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-last-modified-at
+  - jekyll-sitemap
 
 # Optimize Jekyll
 exclude:
@@ -35,7 +36,7 @@ collections:
 
 # date format to record last updated date
 date_format: "%B %d, %Y"
-last_updated: "May 20, 2025"
+last_updated: "June 15, 2025"
 
 # Options
 
