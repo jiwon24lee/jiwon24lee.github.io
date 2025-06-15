@@ -19,6 +19,8 @@ exclude:
   - .editorconfig
   - .git
   - .jekyll-cache
+  - backups
+  - demo
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
