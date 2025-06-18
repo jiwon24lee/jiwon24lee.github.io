@@ -2,7 +2,7 @@
 title: Jiwon Lee
 # tagline: MyThe Jekyll Butler
 url: "https://jiwon24lee.github.io"
-paginate: 1
+# paginate: 1
 baseurl: ""
 permalink: pretty
 
@@ -38,7 +38,7 @@ collections:
 
 # date format to record last updated date
 date_format: "%B %d, %Y"
-last_updated: "June 15, 2025"
+last_updated: "June 18, 2025"
 
 # Options
 
