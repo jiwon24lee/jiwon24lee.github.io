@@ -5,17 +5,17 @@ title: Publications
 
 -----
 **Heliostat: Harnessing Ray Tracing Accelerators for Page Table Walks**
-<!-- <a href="https://doi.ieeecomputersociety.org/10.1109/TC.2025.3543698" 
+<a href="https://doi.org/10.1145/3695053.3731011" 
     style="color: inherit; 
            text-decoration: underline;
            font-weight: bold;">
     [Link]
-</a> -->
+</a>
 <br>
 <span style="color: var(--gray-500);">Yuan Feng, Yuke Li, </span><!--
 --><span style="color: var(--heading-color); font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
 --><span style="color: var(--gray-500);">, Won Woo Ro, and Hyeran Jeon</span> <br>
-<span style="color: var(--heading-color);">(To appear) IEEE/ACM International Symposium on Computer Architecture (ISCA), 2025.  </span> <br>  
+<span style="color: var(--heading-color);">IEEE/ACM International Symposium on Computer Architecture (ISCA), 2025.  </span> <br>  
 
 **COSMOS: An LLC Contention Slowdown Model for Heterogeneous Multi-core Systems**
 <!-- <a href="https://doi.ieeecomputersociety.org/10.1109/TC.2025.3543698" 
