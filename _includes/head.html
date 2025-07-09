@@ -9,7 +9,16 @@
     {{ page.title }} &middot; {{ site.title }}
   {% endif %} -->
   <title>
-    {{ site.title }}
+    {% if page.pagetitle %}
+      {{ page.pagetitle }}
+    {% elsif page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} · {{ site.title }}
+    {% endif %}
+  </title>
+  <!-- <title>
+    {{ site.title }} -->
 
   </title>
 
@@ -30,4 +39,6 @@
   <meta name="google-site-verification" content="v7ZZJDmIAZfQ7_SAT_J4_Xtf5Vl73OVzzJIrTZ8TTDM" />
   <meta name="twitter:card" content="summary" />
   <meta name="robots" content="noimageindex">
+  <meta name="description" content="Jiwon Lee is a researcher in computer architecture and systems, with research interests including (but not limited to) GPU address translation, virtual memory, memory management, multi-GPU systems, and CPU microarchitecture. This site contains his biography, publication list, and selected research highlights.">
+
 </head>
