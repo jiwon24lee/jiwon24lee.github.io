@@ -28,7 +28,7 @@ title: Publications
 
   <!-- conference info -->
   <span itemprop="isPartOf" style="color: var(--heading-color);">
-    IEEE/ACM International Symposium on Microarchitecture (MICRO), 2025.
+    IEEE/ACM International Symposium on Microarchitecture (MICRO), 2025 (to appear).
   </span>
 </article>
 
