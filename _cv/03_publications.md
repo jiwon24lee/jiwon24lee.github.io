@@ -96,6 +96,11 @@ title: Publications
     text-decoration: none;">
     COSMOS: An LLC Contention Slowdown Model for Heterogeneous Multi-core Systems
   </span>
+    <a href="https://doi.org/10.1109/ISPASS64960.2025.00032"
+     target="_blank"
+     style="color: inherit; text-decoration: underline; font-weight: bold;">
+    [DOI]
+  </a>
   <br>
 
   <!-- authors -->
