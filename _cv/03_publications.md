@@ -11,6 +11,34 @@ title: Publications
     font-weight: bold;
     color: inherit;
     text-decoration: none;">
+    REDIT: Redirection-Enabled Memory-Side Directory Architecture for CXL Memory Fabric
+  </span>
+  <a href="https://doi.ieeecomputersociety.org/10.1109/LCA.2025.3621612"
+     target="_blank"
+     style="color: inherit; text-decoration: underline; font-weight: bold;">
+    [DOI]
+  </a>
+  <br>
+
+  <!-- authors -->
+  <span itemprop="author" style="color: var(--gray-500);">Minjae Kim, Jiwan Kim, Won Hur, </span><!--
+  --><span style="color: var(--heading-color); font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
+  --><span style="color: var(--gray-500);">, Mingu Jung, Cheolhwan Kim, Ipoom Jeong, and Won Woo Ro</span>
+  <br>
+
+  <!-- journal info -->
+  <span itemprop="isPartOf" style="color: var(--heading-color);">
+    IEEE Computer Architecture Letters (CAL), 2025.
+  </span>
+</article>
+
+<article itemscope itemtype="http://schema.org/ScholarlyArticle" style="margin-bottom: 1rem;">
+  <!-- title -->
+  <span itemprop="name" style="
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;">
     Understanding Distributed Training of Large Language Models with Unified Virtual Memory
   </span>
   <!-- <a href="https://doi.org/10.1145/3695053.3731011"
@@ -27,7 +55,7 @@ title: Publications
 
   <!-- conference info -->
   <span itemprop="isPartOf" style="color: var(--heading-color);">
-    IEEE International Symposium on Workload Characterization (IISWC), 2025. (to appear)
+    IEEE International Symposium on Workload Characterization (IISWC), 2025.
   </span>
 </article>
 
@@ -40,11 +68,11 @@ title: Publications
     text-decoration: none;">
     LATPC: Accelerating GPU Address Translation Using Locality-Aware TLB Prefetching and MSHR Compression
   </span>
-  <!-- <a href="https://doi.org/10.1145/3695053.3731011"
+  <a href="https://doi.org/10.1145/3725843.3756069"
      target="_blank"
      style="color: inherit; text-decoration: underline; font-weight: bold;">
     [DOI]
-  </a> -->
+  </a>
   <br>
 
   <!-- authors -->
@@ -55,7 +83,7 @@ title: Publications
 
   <!-- conference info -->
   <span itemprop="isPartOf" style="color: var(--heading-color);">
-    IEEE/ACM International Symposium on Microarchitecture (MICRO), 2025. (to appear)
+    IEEE/ACM International Symposium on Microarchitecture (MICRO), 2025.
   </span>
 </article>
 
