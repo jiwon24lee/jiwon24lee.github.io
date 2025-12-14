@@ -86,9 +86,9 @@ title: About Me
       <em>'High-Performance Address Translation Mechanisms for Graphics Processing Units.'</em>
       My research interests span a broad range of topics within computer architecture and systems.
       During my graduate studies, my primary research focus was on designing high-performance address translation methods for GPUs.
-      In addition, I co-authored several research papers on topics such as, enhancing hashed page table, designing efficient CPU microarchitectures, improving memory management methods for unified virtual memory in GPUs, multi-GPU systems, and memory expansion modules.
-      Currently, I am open to postdoctoral opportunities, particularly those that offer the chance to broaden my research expertise beyond my previous focus.
+      In addition, I co-authored several research papers on topics such as enhancing hashed page tables, designing efficient CPU microarchitectures, improving memory management methods for unified virtual memory in GPUs, multi-GPU systems, and memory expansion modules.
+      After gaining industry experience, I will join Uppsala University as a Postdoctoral Researcher starting in Feb. 2026, where I plan to broaden my research beyond my Ph.D. focus.
     </p>
   </div>
-
+  
 </div>
