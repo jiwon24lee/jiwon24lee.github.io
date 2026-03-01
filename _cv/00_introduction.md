@@ -28,7 +28,7 @@ title: About Me
       </div>
       <div class="email-item">
         <span class="email-icon">📧</span>
-        <span class="email-text">jiwon24.lee at gmail.com</span>
+        <span class="email-text">jiwon24.lee at gmail</span>
       </div>
     </div>
 
