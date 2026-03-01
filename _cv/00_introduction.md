@@ -18,17 +18,17 @@ title: About Me
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
-    <p style="margin: 0; font-size: 0.98em;">📍 Suwon, South Korea</p>
+    <p style="margin: 0; font-size: 0.98em;">📍 Uppsala, Sweden</p>
 
     <!-- 메일 -->
     <div class="email-wrapper">
       <div class="email-item">
         <span class="email-icon">📧</span>
-        <span class="email-text">jiwon24.lee at gmail.com</span>
+        <span class="email-text">jiwon.lee at it.uu.se</span>
       </div>
       <div class="email-item">
-        <span class="email-icon hidden-icon">📧</span>
-        <span class="email-text">jiwon.lee at yonsei.ac.kr</span>
+        <span class="email-icon">📧</span>
+        <span class="email-text">jiwon24.lee at gmail.com</span>
       </div>
     </div>
 
@@ -82,12 +82,16 @@ title: About Me
   <!-- Column 2: 자기 소개 -->
   <div style="flex: 1;">
     <p>
-      I completed my Ph.D. at Yonsei University under the supervision of Professor Won Woo Ro, with a dissertation titled
-      <em>'High-Performance Address Translation Mechanisms for Graphics Processing Units.'</em>
-      My research interests span a broad range of topics within computer architecture and systems.
-      During my graduate studies, my primary research focus was on designing high-performance address translation methods for GPUs.
-      In addition, I co-authored several research papers on topics such as enhancing hashed page tables, designing efficient CPU microarchitectures, improving memory management methods for unified virtual memory in GPUs, multi-GPU systems, and memory expansion modules.
-      After gaining industry experience, I will join Uppsala University as a Postdoctoral Researcher starting in Feb. 2026, where I plan to broaden my research beyond my Ph.D. focus.
+      I am a Postdoctoral Researcher at Uppsala University, hosted by Professor David Black-Schaffer and closely collaborating with Professor Chang Hyun Park.
+      I received my Ph.D. from Yonsei University under the supervision of Professor Won Woo Ro, with a dissertation titled
+      <em>“High-Performance Address Translation Mechanisms for Graphics Processing Units.”</em>
+    </p>
+
+    <p>
+      My research interests span computer architecture and systems.
+      My doctoral work focused on high-performance address translation for GPUs, and I co-authored papers on hashed page tables, efficient CPU microarchitectures,
+      unified virtual memory management for GPUs, multi-GPU systems, and memory expansion modules.
+      As a postdoctoral researcher, I am broadening my research beyond my Ph.D. focus toward wider CPU microarchitecture and system-level design challenges.
     </p>
   </div>
   
