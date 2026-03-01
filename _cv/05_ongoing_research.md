@@ -5,7 +5,7 @@ title: List of Ongoing Research
 ---
 
 -----
-**Efficient Memory Management of Large-Scale Memory Space (Under Review)** <br>
+Efficient Memory Management of Large-Scale Memory Space <br>
 Accelerating Sparse Matrix Computations <br>
 Application of IOMMU Specifications <br>
 Identifying Bottlenecks in Serverless Environments <br>
