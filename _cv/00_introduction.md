@@ -18,7 +18,7 @@ title: About Me
     <!-- <img src="/assets/profile_image.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;" loading="lazy"> -->
 
     <!-- 위치 -->
-    <p style="margin: 0; font-size: 0.98em;">📍 Uppsala, Sweden</p>
+    <!-- <p style="margin: 0; font-size: 0.98em;">📍 Uppsala, Sweden</p> -->
 
     <!-- 메일 -->
     <div class="email-wrapper">
@@ -82,16 +82,13 @@ title: About Me
   <!-- Column 2: 자기 소개 -->
   <div style="flex: 1;">
     <p>
-      I am a Postdoctoral Researcher at Uppsala University, hosted by Professor David Black-Schaffer and closely collaborating with Professor Chang Hyun Park.
-      I received my Ph.D. from Yonsei University under the supervision of Professor Won Woo Ro, with a dissertation titled
-      <em>“High-Performance Address Translation Mechanisms for Graphics Processing Units.”</em>
+      I am a Postdoctoral Researcher at Uppsala University with research interests in computer architecture and systems.
+      I received my Ph.D. from Yonsei University, where my dissertation was titled “High-Performance Address Translation Mechanisms for Graphics Processing Units.”
     </p>
 
     <p>
-      My research interests span computer architecture and systems.
-      My doctoral work focused on high-performance address translation for GPUs, and I co-authored papers on hashed page tables, efficient CPU microarchitectures,
-      unified virtual memory management for GPUs, multi-GPU systems, and memory expansion modules.
-      As a postdoctoral researcher, I am broadening my research beyond my Ph.D. focus toward wider CPU microarchitecture and system-level design challenges.
+      Building on my doctoral work in GPU address translation, my research has expanded to a broader range of architectural problems through both primary research and collaboration.
+      My previous work includes GPU memory systems, unified virtual memory, multi-GPU systems, and memory expansion, while my current research focuses more on CPU microarchitecture.
     </p>
   </div>
   

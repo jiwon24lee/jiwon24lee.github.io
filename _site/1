@@ -1,0 +1,146 @@
+debug1: OpenSSH_10.2p1, LibreSSL 3.3.6
+debug1: OpenSSH_10.2p1, LibreSSL 3.3.6
+debug1: Reading configuration data /Users/jiwon/.ssh/config
+debug1: Reading configuration data /Users/jiwon/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/100-macos.conf
+debug1: Reading configuration data /etc/ssh/ssh_config.d/100-macos.conf
+debug1: /etc/ssh/ssh_config.d/100-macos.conf line 1: Applying options for *
+debug1: /etc/ssh/ssh_config.d/100-macos.conf line 1: Applying options for *
+debug1: Reading configuration data /etc/ssh/crypto.conf
+debug1: Reading configuration data /etc/ssh/crypto.conf
+debug1: /etc/ssh/ssh_config line 57: Applying options for *
+debug1: /etc/ssh/ssh_config line 57: Applying options for *
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to github.com port 22.
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to github.com port 22.
+debug1: Connection established.
+debug1: Connection established.
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_rsa
+debug1: identity file /Users/jiwon/.ssh/id_rsa type -1
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_rsa
+debug1: identity file /Users/jiwon/.ssh/id_rsa type -1
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_rsa
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ecdsa
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_rsa
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ecdsa
+debug1: identity file /Users/jiwon/.ssh/id_ecdsa type -1
+debug1: identity file /Users/jiwon/.ssh/id_ecdsa type -1
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ecdsa
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ecdsa
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: identity file /Users/jiwon/.ssh/id_ecdsa_sk type -1
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: identity file /Users/jiwon/.ssh/id_ecdsa_sk type -1
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ed25519
+debug1: identity file /Users/jiwon/.ssh/id_ed25519 type -1
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ed25519
+debug1: identity file /Users/jiwon/.ssh/id_ed25519 type -1
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ed25519
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ed25519
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ed25519_sk
+debug1: identity file /Users/jiwon/.ssh/id_ed25519_sk type -1
+debug1: no pubkey loaded from /Users/jiwon/.ssh/id_ed25519_sk
+debug1: identity file /Users/jiwon/.ssh/id_ed25519_sk type -1
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ed25519_sk
+debug1: no identity pubkey loaded from /Users/jiwon/.ssh/id_ed25519_sk
+debug1: Local version string SSH-2.0-OpenSSH_10.2
+debug1: Local version string SSH-2.0-OpenSSH_10.2
+debug1: Remote protocol version 2.0, remote software version cd00c9e
+debug1: Remote protocol version 2.0, remote software version cd00c9e
+debug1: compat_banner: no match: cd00c9e
+debug1: Authenticating to github.com:22 as 'git'
+debug1: compat_banner: no match: cd00c9e
+debug1: Authenticating to github.com:22 as 'git'
+debug1: load_hostkeys: fopen /Users/jiwon/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /Users/jiwon/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: ecdh-sha2-nistp256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: algorithm: ecdh-sha2-nistp256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none
+debug1: kex: server->client cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+debug1: Server host key: ssh-ed25519 SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+debug1: load_hostkeys: fopen /Users/jiwon/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /Users/jiwon/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'github.com' is known and matches the ED25519 host key.
+debug1: Found key in /Users/jiwon/.ssh/known_hosts:6
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'github.com' is known and matches the ED25519 host key.
+debug1: Found key in /Users/jiwon/.ssh/known_hosts:6
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 4294967296 blocks
+debug1: rekey in after 4294967296 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256,rsa-sha2-512,rsa-sha2-256,ssh-rsa>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256,rsa-sha2-512,rsa-sha2-256,ssh-rsa>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: Will attempt key: /Users/jiwon/.ssh/id_rsa 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ecdsa 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ed25519 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ed25519_sk 
+debug1: Trying private key: /Users/jiwon/.ssh/id_rsa
+debug1: Will attempt key: /Users/jiwon/.ssh/id_rsa 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ecdsa 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ed25519 
+debug1: Will attempt key: /Users/jiwon/.ssh/id_ed25519_sk 
+debug1: Trying private key: /Users/jiwon/.ssh/id_rsa
+debug1: Trying private key: /Users/jiwon/.ssh/id_ecdsa
+debug1: Trying private key: /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: Trying private key: /Users/jiwon/.ssh/id_ecdsa
+debug1: Trying private key: /Users/jiwon/.ssh/id_ecdsa_sk
+debug1: Trying private key: /Users/jiwon/.ssh/id_ed25519
+debug1: Trying private key: /Users/jiwon/.ssh/id_ed25519_sk
+debug1: Trying private key: /Users/jiwon/.ssh/id_ed25519
+debug1: Trying private key: /Users/jiwon/.ssh/id_ed25519_sk
+debug1: No more authentication methods to try.
+git@github.com: Permission denied (publickey).
+debug1: No more authentication methods to try.
+git@github.com: Permission denied (publickey).
