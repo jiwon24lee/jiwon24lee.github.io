@@ -11,6 +11,34 @@ title: Publications
     font-weight: bold;
     color: inherit;
     text-decoration: none;">
+    SAPPhire: Practical Tiered Memory Systems with Memory Availability Prioritization
+  </span>
+  <a href="https://doi.ieeecomputersociety.org/10.1109/TETC.2026.3690019"
+     target="_blank"
+     style="color: inherit; text-decoration: underline; font-weight: bold;">
+    [DOI]
+  </a>
+  <br>
+
+  <!-- authors -->
+  <span itemprop="author" style="color: var(--gray-500);">Minjae Kim, Kyeonghoon Lim, </span><!--
+  --><span style="color: var(--heading-color); font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
+  --><span style="color: var(--gray-500);">, Won Hur, Jiwan Kim, Jaewon Kwon, and Won Woo Ro</span>
+  <br>
+
+  <!-- journal info -->
+  <span itemprop="isPartOf" style="color: var(--heading-color);">
+    IEEE Transactions on Emerging Topics in Computing (TETC), 2026.
+  </span>
+</article>
+
+<article itemscope itemtype="http://schema.org/ScholarlyArticle" style="margin-bottom: 1rem;">
+  <!-- title -->
+  <span itemprop="name" style="
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;">
     REDIT: Redirection-Enabled Memory-Side Directory Architecture for CXL Memory Fabric
   </span>
   <a href="https://doi.ieeecomputersociety.org/10.1109/LCA.2025.3621612"
@@ -41,11 +69,11 @@ title: Publications
     text-decoration: none;">
     Understanding Distributed Training of Large Language Models with Unified Virtual Memory
   </span>
-  <!-- <a href="https://doi.org/10.1145/3695053.3731011"
+  <a href="https://doi.org/10.1109/IISWC66894.2025.00016"
      target="_blank"
      style="color: inherit; text-decoration: underline; font-weight: bold;">
     [DOI]
-  </a> -->
+  </a>
   <br>
   <!-- authors -->
   <span itemprop="author" style="color: var(--gray-500);">Jane Rhee, Eunbi Jeong, </span><!--
