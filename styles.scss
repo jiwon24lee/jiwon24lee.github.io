@@ -2,9 +2,630 @@
 # Front matter (even empty) tells Jekyll to compile this file into styles.css.
 ---
 
-// Partials live in _sass/. Plain @import keeps this compatible with the
-// Sass compiler used by GitHub Pages.
-@import "variables";  // breakpoints, color themes, tokens
-@import "base";       // reset, typography, utilities
-@import "layout";     // page frame, sections, CV content
-@import "masthead";   // sticky header, nav, theme picker
+// All site styles live in this one file. It deliberately has no @import/@use:
+// GitHub Pages compiles with LibSass (no @use), while newer Dart Sass deprecates
+// @import, so a single file builds cleanly with both.
+//
+// Sections: 1. Variables  2. Base  3. Layout  4. Masthead
+
+// ======================================================================
+// 1. Variables — Breakpoints, color themes, tokens
+// ======================================================================
+
+// ─── Breakpoints ──────────────────────────────────────────────────────
+// phone  : < $bp-tablet
+// tablet : $bp-tablet … $bp-desktop
+// desktop: ≥ $bp-desktop
+$bp-tablet: 680px; // below this the nav collapses into the menu button
+$bp-desktop: 920px;
+
+@mixin phone   { @media (max-width: #{$bp-tablet - 0.02px}) { @content; } }
+@mixin tablet-up { @media (min-width: $bp-tablet) { @content; } }
+@mixin desktop { @media (min-width: $bp-desktop) { @content; } }
+
+// ─── Color themes ─────────────────────────────────────────────────────
+// All colors are CSS variables so they can switch at runtime.
+// To change a color, edit it here only.
+@mixin light-theme {
+  color-scheme: light;
+  --body-bg: #fff;
+  --body-color: #495057;      // regular text
+  --heading-color: #212529;   // headings, venue, own name
+  --muted-color: #6c757d;     // co-authors, captions (≥ 4.5:1 contrast on white)
+  --link-color: #228be6;
+  --link-hover-color: #1c7ed6;
+  --border-color: #dee2e6;
+  --header-shadow: rgba(0, 0, 0, .1);
+  --control-hover-bg: #f1f3f5;
+}
+
+@mixin dark-theme {
+  color-scheme: dark;
+  --body-bg: #343a40;
+  --body-color: #dee2e6;
+  --heading-color: #fff;
+  --muted-color: #adb5bd;
+  --link-color: #74c0fc;
+  --link-hover-color: #4dabf7;
+  --border-color: rgba(255, 255, 255, .15);
+  --header-shadow: rgba(0, 0, 0, .35);
+  --control-hover-bg: rgba(255, 255, 255, .08);
+}
+
+// Auto (default): follow the OS. An explicit choice is stored on <html data-theme="…">.
+:root { @include light-theme; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-theme; }
+}
+
+:root[data-theme="dark"] { @include dark-theme; }
+
+// ─── Other tokens ─────────────────────────────────────────────────────
+:root {
+  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body-font-size: 16px;
+  --body-line-height: 1.5;
+  --border-radius: .25rem;
+  --gutter: 1.5rem;          // left/right page padding
+  --header-height: 4rem;     // updated by site.js; used for anchor scroll offset
+}
+
+
+// ======================================================================
+// 2. Base — Reset, typography, utilities
+// ======================================================================
+
+// ─── Reset & base elements ───────────────────────────────────────────
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // Keep anchored section titles from hiding under the sticky header.
+  scroll-padding-top: calc(var(--header-height) + .5rem);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+figure {
+  margin: 0;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--heading-color);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+// SVG icons included from _includes/icons/ take the current text color.
+.icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+// Visible only to screen readers.
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  padding: .5rem 1rem;
+  color: var(--heading-color);
+  background: var(--body-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+
+  &:focus {
+    top: 1rem;
+  }
+}
+
+
+// ======================================================================
+// 3. Layout — Page frame, sections, CV content
+// ======================================================================
+
+// ─── Page frame ──────────────────────────────────────────────────────
+
+.container {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: .875rem;
+  text-align: center;
+
+  p {
+    margin: .25rem 0;
+  }
+}
+
+// ─── Sections (one per file in _cv/) ─────────────────────────────────
+
+.cv-section {
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  margin: 1rem 0 .75rem;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+
+  @include phone {
+    text-align: center;
+  }
+}
+
+.subsection-title {
+  margin: 0 0 .25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: var(--body-line-height);
+  color: var(--body-color);
+}
+
+// List without bullets or indentation (one item per line).
+.plain-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+// ─── About Me ────────────────────────────────────────────────────────
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  @include phone {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-profile {
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+
+  @include phone {
+    flex-basis: auto;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 8px;
+
+  @include phone {
+    width: 60%;
+    max-width: 240px;
+  }
+}
+
+// Discourage saving / previewing the profile photo.
+.no-preview {
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.about-bio {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .98em;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
+}
+
+.contact-icon {
+  min-width: 1.5em;
+  text-align: center;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: block;
+    color: var(--heading-color);
+    transition: transform .2s ease, opacity .2s ease;
+
+    @media (hover: hover) {
+      &:hover { transform: scale(1.2); }
+    }
+    &:active { transform: scale(.95); opacity: .85; }
+  }
+}
+
+// ─── Experience / education entries ─────────────────────────────────
+
+.entry {
+  margin-bottom: .75rem;
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1rem;
+
+  // Phone: put the date on its own line, consistently for every entry.
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+// ─── Publications & patents ─────────────────────────────────────────
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub {
+  margin-bottom: 1rem;
+}
+
+.pub-title,
+.pub-link {
+  font-weight: 700;
+}
+
+a.pub-link,
+.pub-link a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+}
+
+.pub-authors {
+  display: block;
+  color: var(--muted-color);
+}
+
+.me {
+  font-weight: 700;
+  color: var(--heading-color);
+  text-decoration: underline;
+}
+
+.pub-venue {
+  display: block;
+  color: var(--heading-color);
+}
+
+// ─── After Hours ─────────────────────────────────────────────────────
+
+.after-hours {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    align-items: start;
+    gap: 1.25rem;
+  }
+}
+
+// Photos side by side at equal height without cropping: each figure grows
+// in proportion to its image's aspect ratio (--ratio = width / height).
+.photo-row {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  max-width: 30rem;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: none;
+    margin-top: .375rem;
+  }
+
+  figure {
+    flex: var(--ratio, 1) 1 0;
+    min-width: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: .25rem;
+    font-size: .85rem;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--heading-color);
+  }
+}
+
+
+// ======================================================================
+// 4. Masthead — Sticky header, nav, theme picker
+// ======================================================================
+
+// ─── Sticky header: site title, section nav, theme picker ────────────
+//
+// phone  : [theme] [  title  ] [menu]   + drop-down nav
+// tablet+: [title] [   nav   ] [theme]
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 2.25rem 1fr 2.25rem;
+  grid-template-areas: "theme title toggle";
+  align-items: center;
+  column-gap: 1rem;
+  // Bleed into the container padding so the bar covers the full content width.
+  margin: 0 calc(-1 * var(--gutter)) .5rem;
+  padding: 1rem var(--gutter);
+  background-color: var(--body-bg);
+  box-shadow: 0 4px 4px -4px var(--header-shadow);
+
+  @include tablet-up {
+    grid-template-columns: max-content 1fr auto;
+    grid-template-areas: "title nav theme";
+  }
+}
+
+.masthead-title {
+  grid-area: title;
+  justify-self: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--heading-color);
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: var(--heading-color);
+  }
+}
+
+// ─── Section nav ─────────────────────────────────────────────────────
+
+.site-nav {
+  grid-area: nav;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    white-space: nowrap;
+  }
+
+  a {
+    color: var(--heading-color);
+    text-decoration: none;
+    line-height: 1.2;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  @include tablet-up {
+    li + li::before {
+      content: "·";
+      margin: 0 .5rem;
+      color: var(--heading-color);
+    }
+  }
+
+  // Phone: hidden drop-down panel under the header, opened by .nav-toggle.
+  @include phone {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: .25rem 0 .75rem;
+    background-color: var(--body-bg);
+    box-shadow: 0 6px 6px -6px var(--header-shadow);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-.5rem);
+    transition: opacity .2s ease, transform .2s ease, visibility 0s linear .2s;
+
+    .nav-open & {
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    a {
+      display: block;
+      padding: .6rem 1rem; // comfortable touch targets
+      text-align: center;
+    }
+  }
+}
+
+// ─── Header buttons (menu toggle, theme picker) ──────────────────────
+
+.nav-toggle,
+.theme-picker {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  color: var(--heading-color);
+  background: none;
+  border: 0;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover { background-color: var(--control-hover-bg); }
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.nav-toggle {
+  grid-area: toggle;
+
+  @include tablet-up {
+    display: none;
+  }
+}
+
+// Theme picker: an icon showing the current choice, with a transparent
+// native <select> on top (keyboard/touch friendly, no custom popup).
+.theme-picker {
+  grid-area: theme;
+  position: relative;
+
+  .no-js & {
+    visibility: hidden; // needs JavaScript; keep its space so the title stays centered
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.theme-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px; // prevents iOS zoom on focus
+  opacity: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.theme-icon {
+  display: none;
+  grid-area: 1 / 1;
+}
+
+:root:not([data-theme]) .theme-icon-auto,
+:root[data-theme="light"] .theme-icon-light,
+:root[data-theme="dark"] .theme-icon-dark {
+  display: block;
+}

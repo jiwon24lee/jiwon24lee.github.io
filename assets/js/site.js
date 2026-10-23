@@ -4,7 +4,7 @@
 
   var root = document.documentElement;
   var STORAGE_KEY = "theme";
-  var THEME_COLORS = { light: "#ffffff", dark: "#343a40" }; // keep in sync with _variables.scss
+  var THEME_COLORS = { light: "#ffffff", dark: "#343a40" }; // keep in sync with styles.scss (section 1)
 
   // ─── Theme: "auto" (follow OS), "light" or "dark" ──────────────────
   function readTheme() {

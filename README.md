@@ -10,7 +10,7 @@ Personal research profile, built with Jekyll and served by GitHub Pages from the
 | Patents | `_data/patents.yml` |
 | Any other section | the matching file in `_cv/` (sections appear in filename order) |
 | Header links | `_includes/header.html` |
-| Colors (light and dark) | `_sass/_variables.scss` |
+| Colors (light and dark) | `styles.scss`, section 1 (Variables) |
 
 Example publication entry:
 
@@ -29,7 +29,7 @@ _data/                 publications.yml, patents.yml
 _cv/                   one Markdown/HTML file per home-page section
 _includes/             head, header, footer, list templates, icons/*.svg
 _layouts/              default.html (page frame), page.html (/cv/… pages)
-_sass/                 _variables (breakpoints, colors), _base, _layout, _masthead
+styles.scss            all styles in one file: variables (breakpoints, colors), base, layout, masthead
 assets/img/            web-sized photos used on the page
 assets/js/site.js      theme picker, phone menu
 ```
