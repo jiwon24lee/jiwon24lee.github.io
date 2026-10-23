@@ -4,30 +4,14 @@ title: Jiwon Lee
 pagetitle: Jiwon Lee – Computer Architecture Researcher
 ---
 
-<!-- <div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div> -->
-
-<div class="cv">
-  {% for item in site.cv %}
-  <article class="cv-section">
-    <h2 class="item.title" id="{{ item.title | downcase | replace: ' ', '-' }}">
-      <!-- <a href="{{ post.url | relative_url }}"> -->
-        {{ item.title }}
-      <!-- </a> -->
-    </h2>
-    {{ item.content }}
-  </article>
-  {% endfor %}
-</div>
-
+{%- comment -%}
+  The home page is every file in _cv/, in filename order. The section id is
+  the slugified title (e.g. "List of Ongoing Research" → list-of-ongoing-research),
+  which is what the header links point to.
+{%- endcomment %}
+{% for section in site.cv %}
+<section class="cv-section" id="{{ section.title | slugify }}">
+  <h2 class="section-title">{{ section.title }}</h2>
+  {{ section.content }}
+</section>
+{% endfor %}

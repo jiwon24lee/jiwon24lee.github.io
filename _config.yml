@@ -1,58 +1,55 @@
-# Setup
+# ─── Site ─────────────────────────────────────────────────────────────
 title: Jiwon Lee
-# tagline: MyThe Jekyll Butler
+description: >-
+  Jiwon Lee is a researcher in computer architecture and systems, with research
+  interests including (but not limited to) GPU address translation, virtual
+  memory, memory management, multi-GPU systems, and CPU microarchitecture.
+  This site contains his biography, publication list, and selected research
+  highlights.
 url: "https://jiwon24lee.github.io"
-# paginate: 1
 baseurl: ""
 permalink: pretty
+# Used for the "Last updated" date in the footer (= time of the last build/push).
+timezone: Europe/Stockholm
 
-# Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-last-modified-at
-  - jekyll-sitemap
+author:
+  name: Jiwon Lee            # highlighted automatically in author lists
+  email: jiwon24.lee@gmail.com
 
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - backups
-  - demo
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
+# No preview image when the link is shared.
+image: null
 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# user-defined collections
+# ─── Content ──────────────────────────────────────────────────────────
+# Each file in _cv/ is one section of the home page, in filename order.
 collections:
   cv:
     output: true
     permalink: /cv/:name/
 
-# date format to record last updated date
-date_format: "%B %d, %Y"
-last_updated: "June 18, 2025"
+defaults:
+  - scope:
+      path: ""
+      type: cv
+    values:
+      layout: page
 
-# Options
+# ─── Build ────────────────────────────────────────────────────────────
+# Only plugins supported by GitHub Pages.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Specify the author for blog posts
-author:
-  name: Jiwon Lee
-  # url: https://twitter.com/mdo
-  email: jiwon24.lee@gmail.com
-
-# No image at link sharing
-image: null
-
-# Custom vars
-version: 3.0.0
+exclude:
+  - .editorconfig
+  - .jekyll-cache
+  - .ruby-version
+  - backups
+  - unused
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md

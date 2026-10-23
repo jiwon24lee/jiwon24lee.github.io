@@ -1,0 +1,13 @@
+{%- comment -%} Patent list. Data lives in _data/patents.yml. {%- endcomment -%}
+<ol class="pub-list">
+  {%- for patent in site.data.patents %}
+  <li class="pub" itemscope itemtype="https://schema.org/CreativeWork">
+    <span class="pub-title" itemprop="name">{{ patent.title }}</span>
+    {%- if patent.links %} <span class="pub-link">[Link:
+      {%- for link in patent.links %} <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% unless forloop.last %},{% endunless %}{% endfor -%}
+    ]</span>{% endif %}
+    <span class="pub-authors">{% include author-list.html names=patent.inventors %}</span>
+    <span class="pub-venue">{{ patent.numbers }}</span>
+  </li>
+  {%- endfor %}
+</ol>

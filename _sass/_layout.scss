@@ -1,238 +1,246 @@
-// Layout
-//
-// Styles for managing the structural hierarchy of the site.
+// ─── Page frame ──────────────────────────────────────────────────────
 
 .container {
   max-width: 60rem;
-  // max-width: 45rem;
-  padding-left: var(--spacer-2);
-  padding-right: var(--spacer-2);
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
-footer {
-  margin-top: var(--spacer-3);
-  margin-bottom: var(--spacer-3);
+.site-footer {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: .875rem;
+  text-align: center;
+
+  p {
+    margin: .25rem 0;
+  }
 }
 
+// ─── Sections (one per file in _cv/) ─────────────────────────────────
 
-/* ────────── 기본 ────────── */
-.about-me-wrapper,
-.text-image-wrapper {
+.cv-section {
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  margin: 1rem 0 .75rem;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+
+  @include phone {
+    text-align: center;
+  }
+}
+
+.subsection-title {
+  margin: 0 0 .25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: var(--body-line-height);
+  color: var(--body-color);
+}
+
+// List without bullets or indentation (one item per line).
+.plain-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+// ─── About Me ────────────────────────────────────────────────────────
+
+.about {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
+
+  @include phone {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.about-me-wrapper > *,
-.text-image-wrapper > * {
-  flex: 0 0 auto;
-}
-
-// Photo
-.text-image-wrapper {
+.about-profile {
   display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-direction: row;  // 본문과 이미지를 가로로 배치
+  gap: .5rem;
+
+  @include phone {
+    flex-basis: auto;
+    align-items: center;
+    width: 100%;
+  }
 }
 
-.text-content {
+.profile-photo {
+  width: 100%;
+  border-radius: 8px;
+
+  @include phone {
+    width: 60%;
+    max-width: 240px;
+  }
+}
+
+// Discourage saving / previewing the profile photo.
+.no-preview {
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.about-bio {
   flex: 1;
-  min-width: 300px;
+  min-width: 0;
 }
 
-.image-content {
-  display: flex;
-  flex-direction: row; // 이미지를 가로로 배열
-  gap: 0.5rem;
-  justify-content: center; /* ★ 추가: 이미지 정렬 개선 */
-  align-items: center;      /* ★ 추가: 이미지 정렬 개선 */
-  flex-basis: 300px; /* ★ 수정: 이미지 컨테이너 넓이 제한 */
-  // align-items: center;
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .98em;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
 }
 
-.image-content img {
-  margin-top: 6.5px;
-  margin-bottom: 0px;
-  height: 230px; /* 통일된 높이 */
-  width: 100%;   /* 비율 유지 */
-  object-fit: cover;
-  // max-width: 150px; // 필요에 따라 조정
-  // height: auto;
-}
-
-.image-content figcaption {
-  margin-top: 0.12rem;
-  font-size: 0.85rem;
-  // color: #444;
-  color: var(--heading-color);   /* 원래 #444 */
+.contact-icon {
+  min-width: 1.5em;
   text-align: center;
 }
 
-/* ────────── 반응형 (600-900px) ────────── */
-@media (min-width: 600px) and (max-width: 900px) {
-  .text-image-wrapper {
-    flex-direction: column; /* ★ 수정: 세로 배치로 전환 */
-    align-items: center;    /* ★ 수정: 가운데 정렬 */
-  }
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  .text-content {
-    max-width: 100%; /* ★ 수정: 텍스트 너비를 100%로 설정 */
-    // margin-bottom: 1rem; /* ★ 수정: 이미지와 간격 확보 */
-  }
+  a {
+    display: block;
+    color: var(--heading-color);
+    transition: transform .2s ease, opacity .2s ease;
 
-  .image-content {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center; /* ★ 수정: 이미지 간격 조정 */
-    align-items: center;      /* ★ 추가: 이미지 정렬 개선 */
-    width: 95%; /* ★ 수정: 이미지 컨테이너 폭을 100%로 설정 */
+    @media (hover: hover) {
+      &:hover { transform: scale(1.2); }
+    }
+    &:active { transform: scale(.95); opacity: .85; }
   }
-
-  .image-content img {
-    height: 400px;
-    width: 100%; /* ★ 수정: 이미지 폭 줄여서 세로 배치에 적합하게 */
-    // max-width: 100%; /* ★ 수정: 비율 유지 */
-    object-fit: contain;
-  }
-
-  /* 캡션 스타일 */
-  .text-image-wrapper .image-content figure figcaption {
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: inherit;
-    margin-bottom: 1.5rem;
-    // color: #555;
-    color: var(--heading-color);   /* 원래 #444 */
-    font-size: 0.85rem;
-  }
-
-  /* 원래 <br>은 숨기고 */
-  .text-image-wrapper .image-content figure figcaption br {
-    display: none;
-  }
-  /* br 위치에 공백 삽입 (before) */
-  .text-image-wrapper .image-content figure figcaption br::before {
-    content: "\00A0";
-  }
-
-  /* 캡션이 너무 길 때 자동 줄바꿈 */
-  .text-image-wrapper .image-content figure figcaption.long {
-    white-space: normal; /* ★ 수정: 너무 긴 경우 줄바꿈 허용 */
-    word-break: break-word; /* ★ 수정: 단어 중간에 줄바꿈 */
-  }
-
-  // /* 캡션을 한 줄로, br 대신 공백, 말줄임표 적용 */
-  // .text-image-wrapper .image-content figure figcaption {
-  //   // display: inline-block;   /* inline-block 으로 텍스트 흐름 제어 */
-  //   text-align: center;
-  //   white-space: nowrap;
-  //   overflow: hidden;
-  //   text-overflow: ellipsis;
-  //   font-size: inherit;
-  //   margin-bottom: 1.5rem;
-  //   color: #555;
-  // }
-  // /* 원래 <br>은 숨기고 */
-  // .text-image-wrapper .image-content figure figcaption br {
-  //   display: none;
-  // }
-  // /* br 위치에 공백 삽입 (before) */
-  // .text-image-wrapper .image-content figure figcaption br::before {
-  //   content: "\00A0";
-  // }
 }
 
-/* ────────── 모바일 (≤600px) ────────── */
-@media (max-width: 600px) {
-  /* 부모를 block 컨테이너로 변경 */
-  .about-me-wrapper,
-  .text-image-wrapper {
-    display: block !important;
+// ─── Experience / education entries ─────────────────────────────────
+
+.entry {
+  margin-bottom: .75rem;
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1rem;
+
+  // Phone: put the date on its own line, consistently for every entry.
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+// ─── Publications & patents ─────────────────────────────────────────
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub {
+  margin-bottom: 1rem;
+}
+
+.pub-title,
+.pub-link {
+  font-weight: 700;
+}
+
+a.pub-link,
+.pub-link a {
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+}
+
+.pub-authors {
+  display: block;
+  color: var(--muted-color);
+}
+
+.me {
+  font-weight: 700;
+  color: var(--heading-color);
+  text-decoration: underline;
+}
+
+.pub-venue {
+  display: block;
+  color: var(--heading-color);
+}
+
+// ─── After Hours ─────────────────────────────────────────────────────
+
+.after-hours {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    align-items: start;
+    gap: 1.25rem;
+  }
+}
+
+// Photos side by side at equal height without cropping: each figure grows
+// in proportion to its image's aspect ratio (--ratio = width / height).
+.photo-row {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  max-width: 30rem;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: none;
+    margin-top: .375rem;
   }
 
-  /* About Me 프로필 컬럼 중앙 정렬 */
-  .about-me-wrapper > div:first-child {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 1rem !important;
+  figure {
+    flex: var(--ratio, 1) 1 0;
+    min-width: 0;
   }
 
-  /* 프로필 사진만 크기 조절 (직접 자식 img만) */
-  .about-me-wrapper > div:first-child > img {
-    width: 60% !important;    /* 원하는 크기로 조절 */
-    height: auto !important;    /* 종횡비 유지 */
-    max-width: none !important; /* inline width 덮어쓰기 */
+  img {
+    width: 100%;
   }
 
-  /* 위치·이메일은 그대로, 아이콘 컨테이너는 건드리지 않음 */
-  .about-me-wrapper > div:first-child p {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* 아이콘 크기가 커진다면, 아이콘 이미지에 고정 크기 다시 지정 */
-  .about-me-wrapper > div:first-child .icon-container img {
-    width: 24px !important;
-    height: 24px !important;
-  }
-  
-  /* After Hours: 부모 block */
-  .text-image-wrapper {
-    display: block !important;
-  }
-
-  /* After Hours: 텍스트(.text-content)는 block으로, 사진은 order로 위로 */
-  .text-image-wrapper .text-content {
-    display: block !important;
-    width: 100% !important;
-    padding: 0 0rem;
-    box-sizing: border-box;
-    order: 1; /* 아래로 */
-  }
-  .text-image-wrapper .image-content {
-    display: block !important;
-    width: 100% !important;
-    margin-bottom: 1rem;
-    order: 0; /* 위로 */
-  }
-
-  /* 이미지 자체 크기 제한 */
-  .about-me-wrapper img,
-  .text-image-wrapper .image-content img {
-    max-width: 80% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-
-  /* 캡션을 한 줄로, br 대신 공백, 말줄임표 적용 */
-  .text-image-wrapper .image-content figure figcaption {
-    // display: inline-block;   /* inline-block 으로 텍스트 흐름 제어 */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: inherit;
-    margin-bottom: 1.5rem;
-    // color: #555;
-    color: var(--heading-color);   /* 원래 #444 */
-  }
-  /* 원래 <br>은 숨기고 */
-  .text-image-wrapper .image-content figure figcaption br {
-    display: none;
-  }
-  /* br 위치에 공백 삽입 (before) */
-  .text-image-wrapper .image-content figure figcaption br::before {
-    content: "\00A0";
+  figcaption {
+    margin-top: .25rem;
+    font-size: .85rem;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--heading-color);
   }
 }

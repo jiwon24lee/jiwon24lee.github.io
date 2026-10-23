@@ -1,0 +1,38 @@
+<header class="masthead">
+  <div class="theme-picker" title="Color theme">
+    <span class="theme-icon theme-icon-auto">{% include icons/auto.svg %}</span>
+    <span class="theme-icon theme-icon-light">{% include icons/sun.svg %}</span>
+    <span class="theme-icon theme-icon-dark">{% include icons/moon.svg %}</span>
+    <label class="visually-hidden" for="theme-select">Color theme</label>
+    <select id="theme-select" class="theme-select">
+      <option value="auto">Auto (system)</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </div>
+
+  <a class="masthead-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+  <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+    {% include icons/menu.svg %}
+  </button>
+
+  {%- comment -%}
+    Section links. Each <ul> wraps as one group, so a line break can only
+    happen between groups. The href must match the section title, slugified.
+  {%- endcomment %}
+  {%- assign home = "/" | relative_url %}
+  <nav id="site-nav" class="site-nav" aria-label="Sections">
+    <ul>
+      <li><a href="{{ home }}#about-me">Home</a></li>
+      <li><a href="{{ home }}#publications">Publications</a></li>
+      <li><a href="{{ home }}#patents">Patents</a></li>
+      <li><a href="{{ home }}#list-of-ongoing-research">Ongoing Research</a></li>
+    </ul>
+    <ul>
+      <li><a href="{{ home }}#projects">Projects</a></li>
+      <li><a href="{{ home }}#academic-activities">Academic Activities</a></li>
+      <li><a href="{{ home }}#after-hours">After Hours</a></li>
+    </ul>
+  </nav>
+</header>

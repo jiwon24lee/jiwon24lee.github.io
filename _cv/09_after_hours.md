@@ -1,11 +1,9 @@
 ---
-layout: post
 title: After Hours
 ---
 
------
-<div class="text-image-wrapper">
-  <div class="text-content">
+<div class="after-hours">
+  <div class="after-hours-text">
     <p>
       Outside of research, I enjoy playing electric guitar and listening to guitar-driven music.
       I often rehearse and play cover songs with my former university bandmates, and we’ve had many great sessions together in rehearsal studios.
@@ -17,15 +15,21 @@ title: After Hours
       Keeping this mix of styles helps me stay inspired and continuously expand my musical vocabulary.
     </p>
   </div>
-  <div class="image-content">
-    <figure>
-      <img src="assets/me_at_stage.png" alt="Photo of me playing an electric guitar on a stage">
-      <figcaption>Me playing on stage<br> in Sept. 2018</figcaption>
-      <!-- <figcaption>Me playing on stage<br> in September 2018</figcaption> -->
+
+  {%- comment -%}
+    Photos are shown side by side at the same height, without cropping.
+    Keep width/height equal to the real image size; --ratio = width / height.
+  {%- endcomment %}
+  <div class="photo-row">
+    <figure style="--ratio: 0.544">
+      <img src="{{ '/assets/img/after-hours-stage.jpg' | relative_url }}" width="544" height="1000"
+           alt="Photo of me playing an electric guitar on a stage" loading="lazy">
+      <figcaption>Me playing on stage in Sept. 2018</figcaption>
     </figure>
-    <figure>
-      <img src="assets/guitar&amp_full.jpg" alt="Photo of my 12-year old electric guitar and amp">
-      <figcaption>My 12-year-old<br> guitar and amp</figcaption>
+    <figure style="--ratio: 0.75">
+      <img src="{{ '/assets/img/after-hours-guitar.jpg' | relative_url }}" width="750" height="1000"
+           alt="Photo of my 12-year-old electric guitar and amp" loading="lazy">
+      <figcaption>My 12-year-old guitar and amp</figcaption>
     </figure>
   </div>
 </div>

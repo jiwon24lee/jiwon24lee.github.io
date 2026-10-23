@@ -1,0 +1,38 @@
+# Patents, newest first. Rendered by _includes/patents.html.
+#   links:   optional list of {label, url}, shown as [Link: US, CN, KR].
+
+- title: "Memory management unit and method of walking page table"
+  inventors: ["Won Woo Ro", "Jiwon Lee", "Ipoom Jeong", "Hongju Kal", "Gun Ko", "Hyunwuk Lee"]
+  numbers: "US 18/502,058, CN 202311700848.0, KR 10-2022-0175909"
+  links:
+    - { label: US, url: "https://patents.google.com/patent/US20240202136A1/en" }
+    - { label: CN, url: "https://patents.google.com/patent/CN118210740A/en" }
+    - { label: KR, url: "https://patents.google.com/patent/KR20240093023A/en" }
+
+- title: "Swap memory device providing data and data block, method of operating the same, and method of operating electronic device including the same"
+  inventors: ["Won Woo Ro", "Hyoseong Choi", "Jiwon Lee", "Jeonghoon Choi"]
+  numbers: "US 18/350,148, CN 202311408257.6, KR 10-2022-0145399"
+  links:
+    - { label: US, url: "https://patents.google.com/patent/US20240152461A1/en" }
+    - { label: CN, url: "https://patents.google.com/patent/CN117991978A/en" }
+    - { label: KR, url: "https://patents.google.com/patent/KR20240063607A/en" }
+
+- title: "Controller, computing system including the same, and method of creating and searching page table entry for the same"
+  inventors: ["Seongil O", "Won Woo Ro", "William Jinho Song", "Jiwon Lee"]
+  numbers: "US 17/526,391, CN 202210082121.X, KR 10-2021-0054195"
+  links:
+    - { label: US, url: "https://patents.google.com/patent/US11860793B2/en" }
+    - { label: CN, url: "https://patents.google.com/patent/CN115248784A/en" }
+    - { label: KR, url: "https://patents.google.com/patent/KR20220147277A/en" }
+
+- title: "Computing device and method of operating the same"
+  inventors: ["Won Woo Ro", "Minjae Kim", "Kyeonghoon Lim", "Jiwon Lee"]
+  numbers: "KR 10-2023-0193178"
+
+- title: "Memory management apparatus and method for UVM"
+  inventors: ["Won Woo Ro", "Seokjin Go", "Junsung Kim", "Hyunwuk Lee", "Jiwon Lee"]
+  numbers: "KR 10-2023-0076606"
+
+- title: "Neural network processing method"
+  inventors: ["Won Woo Ro", "Hongju Kal", "Cheonjun Park", "Hyunwuk Lee", "Ipoom Jeong", "Jiwon Lee"]
+  numbers: "KR 10-2022-0041848"

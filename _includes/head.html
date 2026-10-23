@@ -1,44 +1,37 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Jiwon: below is original code -->
-    <!-- {% if page.title == "Home" %}
-    {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
-  {% else %}
-    {{ page.title }} &middot; {{ site.title }}
-  {% endif %} -->
-  <title>
-    {% if page.pagetitle %}
-      {{ page.pagetitle }}
-    {% elsif page.title == "Home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} · {{ site.title }}
-    {% endif %}
-  </title>
-  <!-- <title>
-    {{ site.title }} -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </title>
+  {%- comment -%}
+    Apply the saved theme before the stylesheet loads, so there is no flash of
+    the wrong colors. "auto" (no saved value) follows the OS setting.
+  {%- endcomment %}
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.remove("no-js");
+      root.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") root.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#343a40" media="(prefers-color-scheme: dark)">
 
-  <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
-  <!-- (선택) Apple 기기용 -->
-  <link rel="apple-touch-icon" href="{{ '/assets/favicon-cat.png' | relative_url }}">
-  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/apple-touch-icon-precomposed.png' | relative_url }}"> -->
-
-  <!-- 일반 브라우저용 -->
-  <link rel="icon" type="image/png" href="{{ '/assets/favicon-cat.png' | relative_url }}">
-  <!-- <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}"> -->
-   
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
-
+  <title>{% if page.pagetitle %}{{ page.pagetitle }}{% elsif page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
   {% seo title=false %}
-
-  <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" />
-  <meta name="google-site-verification" content="v7ZZJDmIAZfQ7_SAT_J4_Xtf5Vl73OVzzJIrTZ8TTDM" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
   <meta name="robots" content="noimageindex">
-  <meta name="description" content="Jiwon Lee is a researcher in computer architecture and systems, with research interests including (but not limited to) GPU address translation, virtual memory, memory management, multi-GPU systems, and CPU microarchitecture. This site contains his biography, publication list, and selected research highlights.">
+  <meta name="google-site-verification" content="v7ZZJDmIAZfQ7_SAT_J4_Xtf5Vl73OVzzJIrTZ8TTDM">
 
+  {%- comment -%} PNG fallback first (Safari); browsers that support SVG favicons use the last one, which turns white on dark browser tabs. {%- endcomment %}
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/favicon-cat.png' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/icons/favicon.svg' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </head>

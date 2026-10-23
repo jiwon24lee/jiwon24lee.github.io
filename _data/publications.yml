@@ -1,0 +1,103 @@
+# Publications, newest first. Rendered by _includes/publications.html.
+#   doi:     full URL; leave empty (doi: "") until it is assigned.
+#   authors: in order; your own name (site.author.name) is highlighted automatically.
+
+- title: "Maverick: Leveraging Address Translation to Mitigate Memory Latency in Server Workloads"
+  authors: ["Ho Je Lee", "Minchan Kim", "Jaewon Kwon", "Jain Koo", "Yongju Lee", "Won Hur", "Jiwon Lee", "Won Woo Ro"]
+  venue: "IEEE/ACM International Symposium on Microarchitecture (MICRO), 2026."
+  doi: ""
+
+- title: "SAPPhire: Practical Tiered Memory Systems with Memory Availability Prioritization"
+  authors: ["Minjae Kim", "Kyeonghoon Lim", "Jiwon Lee", "Won Hur", "Jiwan Kim", "Jaewon Kwon", "Won Woo Ro"]
+  venue: "IEEE Transactions on Emerging Topics in Computing (TETC), 2026."
+  doi: "https://doi.ieeecomputersociety.org/10.1109/TETC.2026.3690019"
+
+- title: "REDIT: Redirection-Enabled Memory-Side Directory Architecture for CXL Memory Fabric"
+  authors: ["Minjae Kim", "Jiwan Kim", "Won Hur", "Jiwon Lee", "Mingu Jung", "Cheolhwan Kim", "Ipoom Jeong", "Won Woo Ro"]
+  venue: "IEEE Computer Architecture Letters (CAL), 2025."
+  doi: "https://doi.ieeecomputersociety.org/10.1109/LCA.2025.3621612"
+
+- title: "Understanding Distributed Training of Large Language Models with Unified Virtual Memory"
+  authors: ["Jane Rhee", "Eunbi Jeong", "Jiwon Lee", "Myung Kuk Yoon"]
+  venue: "IEEE International Symposium on Workload Characterization (IISWC), 2025."
+  doi: "https://doi.org/10.1109/IISWC66894.2025.00016"
+
+- title: "LATPC: Accelerating GPU Address Translation Using Locality-Aware TLB Prefetching and MSHR Compression"
+  authors: ["Yeonan Ha", "Jiho Park", "Hanna Cha", "Jiwon Lee", "Joonsung Kim", "Won Woo Ro", "Youngsok Kim"]
+  venue: "IEEE/ACM International Symposium on Microarchitecture (MICRO), 2025."
+  doi: "https://doi.org/10.1145/3725843.3756069"
+
+- title: "Heliostat: Harnessing Ray Tracing Accelerators for Page Table Walks"
+  authors: ["Yuan Feng", "Yuke Li", "Jiwon Lee", "Won Woo Ro", "Hyeran Jeon"]
+  venue: "IEEE/ACM International Symposium on Computer Architecture (ISCA), 2025."
+  doi: "https://doi.org/10.1145/3695053.3731011"
+
+- title: "COSMOS: An LLC Contention Slowdown Model for Heterogeneous Multi-core Systems"
+  authors: ["Yongju Lee", "Jaewon Kwon", "Cheolhwan Kim", "Enhyuk Jang", "Jiwon Lee", "Hyunwuk Lee", "Won Woo Ro"]
+  venue: "IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2025."
+  doi: "https://doi.org/10.1109/ISPASS64960.2025.00032"
+
+- title: "HashScape: Leveraging Virtual Address Dynamics for Efficient Hashed Page Tables"
+  authors: ["Won Hur", "Jiwon Lee", "Jaewon Kwon", "Minjae Kim", "Won Woo Ro"]
+  venue: "IEEE Transactions on Computers (TC), 2025."
+  doi: "https://doi.ieeecomputersociety.org/10.1109/TC.2025.3543698"
+
+- title: "Marching Page Walks: Batching and Concurrent Page Table Walks for Enhancing GPU Throughput"
+  authors: ["Jiwon Lee*", "Gun Ko", "Myung Kuk Yoon", "Ipoom Jeong", "Yunho Oh", "Won Woo Ro"]
+  venue: "IEEE International Symposium on High-Performance Computer Architecture (HPCA), 2025."
+  doi: "https://doi.org/10.1109/HPCA61900.2025.00123"
+
+- title: "REC: Enhancing Fine-Grained Cache Coherence Protocol in Multi-GPU Systems"
+  authors: ["Gun Ko", "Jiwon Lee", "Hongju Kal", "Hyunwuk Lee", "Won Woo Ro"]
+  venue: "Journal of Systems Architecture (JSA), Vol. 160, 103339, Mar. 2025."
+  doi: "https://doi.org/10.1016/j.sysarc.2025.103339"
+
+- title: "Geneva: A Dynamic Confluence of Speculative Execution and In-Order Commitment Windows"
+  authors: ["Yanghee Lee", "Jiwon Lee", "Jaewon Kwon", "Yongju Lee", "Won Woo Ro"]
+  venue: "IEEE/ACM Design Automation Conference (DAC), 2024."
+  doi: "https://doi.org/10.1145/3649329.3655924"
+
+- title: "SnakeByte: A TLB Design with Adaptive and Recursive Page Merging in GPUs"
+  authors: ["Jiwon Lee*", "Ju Min Lee", "Yunho Oh", "William J. Song", "Won Woo Ro"]
+  venue: "IEEE International Symposium on High-Performance Computer Architecture (HPCA), 2023."
+  doi: "https://doi.org/10.1109/HPCA56546.2023.10071063"
+
+- title: "Early-Adaptor: An Adaptive Framework for Proactive UVM Memory Management"
+  authors: ["Seokjin Go", "Hyunwuk Lee", "Junsung Kim", "Jiwon Lee", "Myung Kuk Yoon", "Won Woo Ro"]
+  venue: "IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), 2023."
+  doi: "https://doi.org/10.1109/ISPASS57527.2023.00032"
+
+- title: "Analysis on Memory Access Patterns of Server-Class Workloads in Page- and Cache Line- Granularity"
+  authors: ["Kyeonghoon Lim", "Minjae Kim", "Jiwon Lee", "Won Woo Ro"]
+  venue: "International Conference on Electronics, Information, and Communication (ICEIC), 2023."
+  doi: ""
+
+- title: "Performance Analysis of Criticality-Aware Out-of-Order Cores for Exploiting MLP"
+  authors: ["Yanghee Lee", "Jiwon Lee", "Won Woo Ro"]
+  venue: "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2023."
+  doi: "https://doi.org/10.1109/ITC-CSCC58803.2023.10212794"
+
+- title: "Adaptive Data Prefetcher with Probability Learning in LLC"
+  authors: ["Jusin Kim", "Jiwon Lee", "Won Woo Ro"]
+  venue: "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2023."
+  doi: "https://doi.org/10.1109/ITC-CSCC58803.2023.10212572"
+
+- title: "Reconstructing Out-of-Order Issue Queue"
+  authors: ["Ipoom Jeong", "Jiwon Lee", "Myung Kuk Yoon", "Won Woo Ro"]
+  venue: "IEEE/ACM International Symposium on Microarchitecture (MICRO), 2022."
+  doi: "https://doi.org/10.1109/MICRO56248.2022.00023"
+
+- title: "Analysis of DRAM-based Network of DRAM Swap Space Adopting Latency Hiding Technique"
+  authors: ["Hyoseong Choi", "Jiwon Lee", "Jeonghoon Choi", "Won Woo Ro"]
+  venue: "International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC), 2022."
+  doi: "https://doi.org/10.1109/ITC-CSCC55581.2022.9894856"
+
+- title: "PIMCaffe: Functional Evaluation of a Machine Learning Framework for In-Memory Neural Processing Unit"
+  authors: ["Won Jeon", "Jiwon Lee", "Dongseok Kang", "Hongju Kal", "Won Woo Ro"]
+  venue: "IEEE Access, Vol. 9, pp. 96629–96640, Jul. 2021."
+  doi: "https://doi.org/10.1109/ACCESS.2021.3094043"
+
+- title: "Chapter Six – Deep learning with GPUs"
+  authors: ["Won Jeon", "Gun Ko", "Jiwon Lee", "Hyunwuk Lee", "Dongho Ha", "Won Woo Ro"]
+  venue: "Advances in Computers, Vol. 122, pp. 167–215, 2021."
+  doi: "https://doi.org/10.1016/bs.adcom.2020.11.003"

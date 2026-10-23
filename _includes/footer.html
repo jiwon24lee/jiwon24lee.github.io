@@ -1,0 +1,5 @@
+<footer class="site-footer">
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+  {%- comment -%} site.time is the build time, i.e. the last push to GitHub Pages. {%- endcomment %}
+  <p>Last updated: <time datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%B %-d, %Y' }}</time></p>
+</footer>

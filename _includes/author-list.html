@@ -1,0 +1,17 @@
+{%- comment -%}
+  Renders a list of names as "A, B, and C" (or "A and B"), highlighting
+  site.author.name (a trailing "*" is allowed, e.g. "Jiwon Lee*").
+  Usage: {% include author-list.html names=pub.authors %}
+{%- endcomment -%}
+{%- assign n = include.names | size -%}
+{%- for name in include.names -%}
+  {%- unless forloop.first -%}
+    {%- if forloop.last -%}{%- if n > 2 -%}, and {% else %} and {% endif -%}{%- else -%}, {% endif -%}
+  {%- endunless -%}
+  {%- assign plain = name | remove: "*" | strip -%}
+  {%- if plain == site.author.name -%}
+    <span class="me" itemprop="author">{{ name }}</span>
+  {%- else -%}
+    <span itemprop="author">{{ name }}</span>
+  {%- endif -%}
+{%- endfor -%}

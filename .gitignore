@@ -1,1 +1,5 @@
 unused/*
+_site/
+.jekyll-cache/
+.sass-cache/
+.DS_Store
