@@ -11,6 +11,34 @@ title: Publications
     font-weight: bold;
     color: inherit;
     text-decoration: none;">
+    Maverick: Leveraging Address Translation to Mitigate Memory Latency in Server Workloads
+  </span>
+  <!-- <a href=""
+     target="_blank"
+     style="color: inherit; text-decoration: underline; font-weight: bold;">
+    [DOI]
+  </a> -->
+  <br>
+
+  <!-- authors -->
+  <span itemprop="author" style="color: var(--gray-500);">Ho Je Lee, Minchan Kim, Jaewon Kwon, Jain Koo, Yongju Lee, Won Hur, </span><!--
+  --><span style="color: var(--heading-color); font-weight: bold; text-decoration: underline;">Jiwon Lee</span><!--
+  --><span style="color: var(--gray-500);">, and Won Woo Ro</span>
+  <br>
+
+  <!-- conference info -->
+  <span itemprop="isPartOf" style="color: var(--heading-color);">
+    IEEE/ACM International Symposium on Microarchitecture (MICRO), 2026.
+  </span>
+</article>
+
+<article itemscope itemtype="http://schema.org/ScholarlyArticle" style="margin-bottom: 1rem;">
+  <!-- title -->
+  <span itemprop="name" style="
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;">
     SAPPhire: Practical Tiered Memory Systems with Memory Availability Prioritization
   </span>
   <a href="https://doi.ieeecomputersociety.org/10.1109/TETC.2026.3690019"
